@@ -22,7 +22,7 @@ section {
 }
 footer {
     border-radius: 12px;
-    background-color: rgb(0, 139, 139);
+    background-color: #005C5C;
     height: 100px;
     width: 100%;
     color: white;
@@ -30,8 +30,6 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-decoration-color: white;
-    
 }
 a:link {
     color: white;
@@ -52,7 +50,7 @@ a:link {
   }
 
   li a:link {
-    color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
