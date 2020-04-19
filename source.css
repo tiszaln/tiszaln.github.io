@@ -155,4 +155,8 @@ li a:hover {
         width: 100%;
     }
 
+    #copyright {
+        font-size: 0.8em;
+    }
+
 }
