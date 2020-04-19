@@ -18,6 +18,9 @@ table {
     max-width: 100%;
 }
 
+h1, h2 {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
 h2 {
     font-size: 1.8em;
 }
