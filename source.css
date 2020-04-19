@@ -25,6 +25,11 @@ section {
     margin-right: 10px;
 }
 
+hr {
+    width: 70%;
+    margin-right: 50%;
+}
+
 footer {
     border-radius: 12px;
     background-color: #005C5C;
@@ -124,5 +129,9 @@ li a:hover {
 
     h2 {
         font-size: 1.3em;
+    }
+
+    hr {
+        width: 100%;
     }
 }
