@@ -1,4 +1,4 @@
-@media (max-width:42em) {
+@media only screen and (max-width:42em) {
 
     header {
         height: 250px;
