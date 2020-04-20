@@ -1,5 +1,24 @@
 @media only screen and (min-width: 60em) {
     main {
-        grid-template-columns: 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+    section:nth-child(1) {
+        margin-bottom: 0;
+        }
+
+    section:nth-child(2) {
+        margin: 16px 8px 0 8px;
+    }
+    section:nth-child(3) {
+        grid-column: span 1;
+        margin-top: 16px;
+        margin-left: 8px;
+        margin-bottom: 0;
+    }
+
+    img:nth-child(2) {
+        padding-bottom: -10px;
+    }
+    
 }
