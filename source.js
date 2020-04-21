@@ -1,5 +1,16 @@
 var today = new Date();
 var year = today.getFullYear();
+
+function copyYear() {
+    document.getElementById("copyright").innerHTML = year;
+    document.getElementById("lastUpdate").innerHTML = "Last Updated: " + document.lastModified;
+};
+
+/* 
+Definitely created a lot more work for myself going this route.... XD
+
+var today = new Date();
+var year = today.getFullYear();
 var lastModified = new Date(document.lastModified);
 
 let daysInMonth = createNumArray(0, 32);
@@ -33,4 +44,4 @@ function createNumArray(start, count) {
 
     }
     return array;
-};
+}; */
