@@ -1,0 +1,20 @@
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(1) {
+        margin-right: 8px;
+    }
+    section:nth-child(2) {
+        margin-top: 16px;
+        margin-left: 8px;
+    }
+    section:nth-child(3) {
+        grid-column: span 2;
+        margin-top: 0;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
