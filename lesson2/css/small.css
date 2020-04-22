@@ -28,6 +28,10 @@ section {
     padding: 0 20px 0 20px;
 }
 
+section h3 {
+    font-style: italic;
+}
+
 section:nth-child(2) {
     margin-top: 0;
 }
@@ -48,7 +52,9 @@ img {
 }
 
 a {
+    display: block;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 a:link {
