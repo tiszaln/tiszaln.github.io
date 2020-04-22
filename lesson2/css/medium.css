@@ -13,4 +13,8 @@
         grid-column: span 2;
         margin-top: 0;
     }
+
+    footer {
+        font-size: 1em;
+    }
 }

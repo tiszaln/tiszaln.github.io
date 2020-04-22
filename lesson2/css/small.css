@@ -45,15 +45,14 @@ img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     border: solid lightpink 2px;
     border-radius: 5px;
 
 }
 
-a {
+section a {
     display: block;
-    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -73,4 +72,20 @@ a:hover {
     color: rgb(0, 225, 255);
     background-color: transparent;
     text-decoration: underline;
+}
+
+footer {
+    background-color: #005C5C;
+    height: 90px;
+    width: 100%;
+    color: white;
+    font-size: 0.8em;
+    /* text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
