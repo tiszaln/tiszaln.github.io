@@ -13,7 +13,8 @@ header div h1 {
     padding-right: 15px;
 }
 
-nav, footer {
+nav,
+footer {
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -22,8 +23,8 @@ nav, footer {
 nav ul {
     list-style-type: none;
     margin: 0;
-	padding: 0;
-	overflow: hidden;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav ul li a {
@@ -45,24 +46,39 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right:15px;
-    
+    padding-right: 15px;
+
 }
 
 main h2 {
     margin-bottom: 0;
 }
 
-main div {
+div section h3 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+div section h4 {
+    margin: 0
+}
+
+div section p {
+    margin: 0 0 5px 0;
+
+}
+
+/* main div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-}
+} */
 
 
 
 section {
-    padding: 15px;
+    padding: 0 15px 0 15px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -88,3 +104,11 @@ img {
     max-width: 200px;
 }
 
+td ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.leftColumn {
+    width: 20%;
+}

@@ -6,12 +6,12 @@
         margin-right: auto;
     }
 
-    nav ul li { 
-        flex: 1 1 100%; 
-       
+    nav ul li {
+        flex: 1 1 100%;
+
     }
 
-    main div {
+    /*   main div {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 }
