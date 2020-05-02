@@ -12,14 +12,18 @@
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
 
-    <title>Site Plan for happyweather.app</title>
+
+    <title>Site Plan for weatherfacts.app</title>
     <meta name="description"
-        content="happyweather.app's site plan as defined in lesson 3 requirements at BYU-Idaho's WDD230">
+        content="weatherfacts.app's site plan as defined in lesson 3 requirements at BYU-Idaho's WDD230">
+    <script src="../lesson1/js/source.js"></script>
 </head>
 
-<body>
+<body onload="copyYear()">
     <header>
-        <h1>Site Plan</h1>
+        <div>
+            <h1>WeatherFacts.app</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Overview</a></li>
@@ -31,18 +35,37 @@
 
     </header>
     <main>
-        <h1>HappyWeather.app</h1>
-        <section></section>
-        <section></section>
-        <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
-        </figure>
+
+        <h2>Site Plan</h2>
+        <hr>
+        <p>Welcome to WeatherFacts.app's site plan website. You will find the inner workings of this site below and on
+            other pages accessible through the navigation bar above.</p>
+        <div>
+            <section>
+                <h3>Domain</h3>
+                <p>From Google Domains I was able to find WeatherFacts.app which was priced at $14/year</p>
+            </section>
+            <section>
+                <h3>Site Purpose</h3>
+                <p>Facts...it's black and white. There is not questions that this will be reliable and accurate much
+                    like
+                    facts are in any spectrum.</p>
+            </section>
+            <section>
+                <h3>Logo</h3>
+                <figure>
+                    <img src="./images/WeatherFactsLogo.png" alt="WeatherFacts.app's logo">
+                    <figcaption>Weather Facts Logo</figcaption>
+                </figure>
+            </section>
+        </div>
 
 
     </main>
     <footer>
-
+        <div>&copy; <span id="copyright"></span> | Daniel Olsen | Idaho | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></div>
+        <span id="lastUpdate"></span>
     </footer>
 
 </body>

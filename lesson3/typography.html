@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
 
-    <title>Typography for happyweather.app</title>
+    <title>Typography for weatherfacts.app</title>
     <meta name="description"
-        content="happyweather.app's Typography as defined in lesson 3 requirements at BYU-Idaho's WDD230">
+        content="weatherfacts.app's Typography as defined in lesson 3 requirements at BYU-Idaho's WDD230">
+    <script src="../lesson1/js/source.js"></script>
 </head>
 
-<body>
+<body onload="copyYear()">
     <header>
-        <h1>Typography</h1>
+        <div>
+            <h1>WeatherFacts.app</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="./index.html">Overview</a></li>
@@ -30,19 +33,22 @@
         </nav>
     </header>
     <main>
-        <h1>HappyWeather.app</h1>
-        <section></section>
-        <section></section>
-        <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
-        </figure>
+        <h2>Typography</h2>
+        <hr>
+        <p></p>
+        <div>
+            <section></section>
+            <section></section>
+        </div>
 
 
     </main>
     <footer>
-
+        <div>&copy; <span id="copyright"></span> | Daniel Olsen | Idaho | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></div>
+        <span id="lastUpdate"></span>
     </footer>
+
 
 </body>
 

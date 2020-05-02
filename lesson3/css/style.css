@@ -2,18 +2,19 @@ body {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 
-main {
+header div {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header h1 {
-    text-align: center;
+header div h1 {
+    text-align: right;
+    padding-right: 15px;
 }
 
-nav {
-    background-color: lightseagreen;
+nav, footer {
+    background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -29,6 +30,61 @@ nav ul li a {
     display: block;
     text-decoration: none;
     text-align: center;
-    margin: 5px
+    margin: 5px;
+    color: white;
 
 }
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+
+main {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right:15px;
+    
+}
+
+main h2 {
+    margin-bottom: 0;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+
+
+section {
+    padding: 15px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: .9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer div {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 200px;
+}
+
