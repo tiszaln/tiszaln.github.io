@@ -42,7 +42,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-
 main {
     max-width: 900px;
     margin-left: auto;
@@ -75,8 +74,6 @@ div section p {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 } */
-
-
 
 section {
     padding: 0 15px 0 15px;
@@ -133,6 +130,36 @@ td ul {
     text-align: right;
 }
 
+.leftColumn2 {
+    background-color: rgb(17, 17, 17);
+    padding: 10px;
+}
+
 #typography {
     width: 100%;
+}
+
+.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#titleHead {
+    color: #64a6bd;
+}
+
+#plist {
+    color: #90a8c3;
+}
+
+#links {
+    color: #ada7c9;
+}
+
+#vlinks {
+    color: #d7b9d5;
+}
+
+#accents {
+    color: #f4cae0;
 }
