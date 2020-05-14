@@ -1,11 +1,9 @@
 body {
-    font-family: "Rubik", Arial, Helvetica, sans-serif;
-    background-color: #fceef5;
-    
+    font-family: "Rubik", Arial, Helvetica, sans-serif;  
 }
 
 header {
-    background-color: #bfe9f7;
+    background-color: #000025;
     height: 100px;
     margin: 0;
 }
@@ -16,7 +14,7 @@ header div{
 }
 
 header h1 {
-    color: #64a6bd;
+    color: #FFFFFF;
     margin: 0;
     padding-top: 30px;
     font-size: 1.4em;
@@ -33,12 +31,12 @@ header div p {
     margin: 0;
     padding-right:15px;
     text-align: center;
-    color: #64a6bd
+    color: #FFFFFF;
 }
 
 hr {
     margin: 0 auto;
-    color: #f4cae0;
+    color: #31003C;
 }
 
 nav {
@@ -54,7 +52,7 @@ nav button {
     border: none;
     padding: 13px 0;
     text-align: center;
-    background-color: #e2e9f1;
+    background-color: #31003C;
     font-weight: bold;
     border-bottom: 1px dotted #90a8c3;
     color: #ada7c9;
@@ -80,7 +78,7 @@ nav ul li a {
     padding-left: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #eef2f7;
+    background-color: #31003C;
     font-weight: bold;
     border-bottom: 1px dotted #90a8c3;
 }
@@ -94,8 +92,8 @@ nav ul li a:visited {
     color: #ada7c9;
 }
 nav ul li a:hover, nav button:hover {
-    color: white;
-    background-color: #90a8c3;
+    color: #31003C;
+    background-color: #ada7c9;
 }
 
 nav ul li a:active {
@@ -110,7 +108,7 @@ main {
 main h2 {
     text-align: center;
     margin: 0;
-    color: #64a6bd;
+    color: #161b33;
     padding: 20px 0;
 }
 
@@ -122,15 +120,15 @@ section h3 {
     padding: 10px;
     margin: 0 0 10px 0;
     border: 1px dotted #90a8c3;
-    color: #90a8c3;
+    color: #161b33;
 }
 
 footer {
     text-align: center;
-    background-color: #eef2f7;
+    background-color: #31003C;
     padding: 15px;
     font-size: 0.8em;
-    color: #90a8c3;
+    color: #ada7c9;
     border: 1px dotted #90a8c3;
 }
 
