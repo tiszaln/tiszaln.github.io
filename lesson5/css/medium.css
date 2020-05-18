@@ -52,6 +52,10 @@
         margin: 0 auto;
     }
 
+    section div h3 {
+        margin-top: 60px;
+    }
+
     footer {
         padding: 15px 0;
     }
@@ -103,7 +107,30 @@
         padding-bottom: 3px;
     }
 
-    /*   main div {
-        grid-template-columns: 1fr 1fr;
-    } */
+    #articleImage {
+
+        position: relative;
+        float: right;
+        max-width: 450px;
+        margin-bottom: 5px;
+        padding-left: 30px;
+    }
+
+    #dayArticle {
+        padding: 30px;
+    }
+    
+
+    #map {
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+
+    #contactSection {
+        height:340px;
+    }
+
+    footer {
+        clear: left;
+    }
 }
