@@ -1,5 +1,5 @@
 body {
-    font-family: "Rubik", Arial, Helvetica, sans-serif;  
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
 #pancakeDay {
@@ -17,7 +17,7 @@ header {
     margin: 0;
 }
 
-header div{
+header div {
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,7 +38,7 @@ header img {
 
 header div p {
     margin: 0;
-    padding-right:15px;
+    padding-right: 15px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -76,7 +76,6 @@ nav ul {
 
 nav ul li {
     border-bottom: 5px;
-
 }
 
 nav ul li a {
@@ -94,13 +93,15 @@ nav ul li a {
 
 nav ul li a:link {
     color: #ada7c9;
-    
+
 }
 
 nav ul li a:visited {
     color: #ada7c9;
 }
-nav ul li a:hover, nav button:hover {
+
+nav ul li a:hover,
+nav button:hover {
     color: #31003C;
     background-color: #ada7c9;
 }
@@ -138,19 +139,21 @@ section div h3 {
     padding-bottom: 0;
     color: #31003C;
 }
+
 .heroDiv {
     position: relative;
     margin-bottom: 20px;
 }
+
 .weatherSummary {
-    position: absolute;   
+    position: absolute;
     margin: 10px;
     max-width: 300px;
     width: 85%;
     margin-bottom: 0;
-    padding:10px;
+    padding: 10px;
     background-color: #ada7c9c2;
-    
+
 }
 
 .weatherSummary h3 {
@@ -160,27 +163,28 @@ section div h3 {
     margin: 0;
 }
 
- .weatherSummary hr {
+.weatherSummary hr {
     margin-bottom: 10px;
-    margin-top:0;
+    margin-top: 0;
     color: #31003C;
- }
+}
 
- .sumgrid {
-     display: flex;
- }
+.sumgrid {
+    display: flex;
+}
 
- .sumgrid h4, .sumgrid p {
-     flex: 1 1;
-     margin: 0;
-     padding: 0;
-     color: #31003C;
- }
+.sumgrid h4,
+.sumgrid p {
+    flex: 1 1;
+    margin: 0;
+    padding: 0;
+    color: #31003C;
+}
 
- .sumgrid h4 {
-     text-align: right;
-     padding-right: 10px;
- }
+.sumgrid h4 {
+    text-align: right;
+    padding-right: 10px;
+}
 
 img {
     width: 100%;
@@ -213,7 +217,7 @@ footer a {
 }
 
 article h3 {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -222,8 +226,19 @@ article h3 {
 }
 
 #dayArticle {
-    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
     background-color: #ada7c9;
+}
+
+#dayArticle div {
+    order: 1;
+}
+
+#articleImage {
+    order: 2;
 }
 
 #contactSection {
@@ -231,11 +246,15 @@ article h3 {
     padding: 15px;
 }
 
+#contactSection div {
+    margin-bottom: 20px;
+}
+
 #contact {
     list-style-type: none;
 }
 
-#contact{
+#contact {
     padding: 0;
     margin: 0;
 }
@@ -252,7 +271,10 @@ article h3 {
     display: block;
     max-width: 98%;
     margin: 0 auto;
-    
+    width: 600px;
+    height: 340px;
+    border: 2px solid #31003C;
+    border-radius: 10px;
 }
 
 #socials {
@@ -262,6 +284,7 @@ article h3 {
     padding: 0;
     margin: 0;
 }
+
 #socials li {
     padding: 0;
     margin: 0;
@@ -270,9 +293,13 @@ article h3 {
     width: 60px;
 }
 
+.svg:hover {
+    filter:
+        invert(0.5) sepia(1) hue-rotate(220deg) saturate(4) brightness(.5);
+}
+
 li img {
     display: block;
     margin: 0 auto;
     width: 30px;
-    
 }
