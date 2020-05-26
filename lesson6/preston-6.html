@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Olsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+
+
+    <title>Weather Facts</title>
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
+    <script src="./js/source.js"></script>
+</head>
+
+<body onload="copyYear()">
+    <aside id="pancakeDay">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+        <div>
+            <img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun.">
+            <h1>WeatherFacts.app</h1>
+            <p>It's all that matters</p>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <button onclick="responsiveMenu()" id="toggleMenu">&#9776; Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="#2">Home</a></li>
+            <li><a class="current" href="#3">Preston</a></li>
+            <li><a href="#4">Soda Springs</a></li>
+            <li><a href="#5">Fish Haven</a></li>
+            <li><a href="#6">Storm Center</a></li>
+            <li><a href="#7">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Preston Idaho</h2>
+        <div class="heroDiv">
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <hr>
+                <div class="sumgrid">
+                    <h4>Current:</h4>
+                    <p>Sunny</p>
+                </div>
+                <div class="sumgrid">
+                    <h4>High:</h4>
+                    <p>76 &#8457;</p>
+                </div>
+                <div class="sumgrid">
+                    <h4>Wind Chill:</h4>
+                    <p>&#8457;</p>
+                </div>
+                <div class="sumgrid">
+                    <h4>Humidity:</h4>
+                    <p>69%</p>
+                </div>
+                <div class="sumgrid">
+                    <h4>Wind Speed:</h4>
+                    <p>5mph</p>
+                </div>
+            </section>
+            <img src="./images/pineTrees.jpg" alt="Birds flying above the forest trees">
+
+        </div>
+        <section id="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <div id="fiveDayLayout">
+                <div class="days">
+                    <p id="day0">Wed</p>
+                    <p class="weatherIcon">&#9728;&#65039;</p>
+                    <p>89 &#8457;</p>
+                </div>
+                <div class="days">
+                    <p id="day1">Thu</p>
+                    <p class="weatherIcon">&#9728;&#65039;</p>
+                    <p>87 &#8457;</p>
+                </div>
+                <div class="days">
+                    <p id="day2">Fri</p>
+                    <p class="weatherIcon">&#9728;&#65039;</p>
+                    <p>78 &#8457;</p>
+                </div>
+                <div class="days">
+                    <p id="day3">Sat</p>
+                    <p class="weatherIcon">&#9728;&#65039;</p>
+                    <p>75 &#8457;</p>
+                </div>
+                <div class="days">
+                    <p id="day4">Sun</p>
+                    <p class="weatherIcon">&#9728;&#65039;</p>
+                    <p>72 &#8457;</p>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <article id="dayArticle">
+            <img id="articleImage" src="./images/sunForest.jpg" alt="Sun light shining through forest trees">
+            <div>
+                <h3>Founders Day Fresco</h3>
+                <p>By Janica Juarez</p>
+                <p>I'm baby lo-fi cold-pressed artisan heirloom tousled, pinterest brooklyn hell of pitchfork kale chips
+                    master cleanse raclette tattooed. Tofu photo booth green juice poke pour-over cronut 3 wolf moon,
+                    ugh disrupt before they sold out live-edge aesthetic viral marfa pitchfork. Hell of quinoa subway
+                    tile chicharrones actually. Heirloom hell of echo park leggings vexillologist.</p>
+                <p>Blog tumeric chillwave gluten-free vape. Mumblecore kombucha art party pitchfork, typewriter deep v
+                    small batch coloring book letterpress chambray banh mi. Meh tofu pinterest ennui bespoke.
+                    Cold-pressed unicorn celiac, four dollar toast four loko kitsch kickstarter. Taxidermy banh mi
+                    street art chartreuse raw denim microdosing austin four loko normcore woke bitters biodiesel
+                    gastropub VHS gochujang.</p>
+            </div>
+
+
+        </article>
+        <br>
+        <section id="contactSection">
+
+            <div>
+                <h3>Contact information</h3>
+                <ul id="contact">
+                    <li>&#128236; 1111 Fake Street,<br>Preston ID 83263</li>
+                    <li>&#128241; (208)-000-0000</li>
+                    <li>&#128187; us@weatherfacts.com</li>
+                </ul>
+                <br>
+                <ul id="socials">
+                    <li class="svg"><img src="./images/facebook.svg" alt="facebook logo"></li>
+                    <li class="svg"><img src="./images/twitter.svg" alt="twitter logo"></li>
+                    <li class="svg"><img src="./images/pinterest.svg" alt="pintrest logo"></li>
+                    <li class="svg"><img src="./images/whatsapp.svg" alt="whatsapp logo"></li>
+
+                </ul>
+            </div>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGjw2NJEzzUTACrfM1npnwX2WbiVti-mI&q=Preston+ID"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+    </main>
+    <footer>
+        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <span id="today"></span>
+    </footer>
+
+</body>
+
+</html>
