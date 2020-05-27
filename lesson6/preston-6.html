@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
@@ -17,9 +16,10 @@
     <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
     <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
     <script src="./js/source.js"></script>
+    <script src="./js/windChill.js"></script>
 </head>
 
-<body onload="copyYear()">
+<body onload="copyYear(), calcWindChill()">
     <aside id="pancakeDay">
         Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
     </aside>
@@ -55,11 +55,11 @@
                 </div>
                 <div class="sumgrid">
                     <h4>High:</h4>
-                    <p>76 &#8457;</p>
+                    <p><span id="temp">50</span>&#8457;</p>
                 </div>
                 <div class="sumgrid">
                     <h4>Wind Chill:</h4>
-                    <p>&#8457;</p>
+                    <p><span id="windChill"></span></p>
                 </div>
                 <div class="sumgrid">
                     <h4>Humidity:</h4>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="sumgrid">
                     <h4>Wind Speed:</h4>
-                    <p>5mph</p>
+                    <p><span id="speed">16</span>mph</p>
                 </div>
             </section>
             <img src="./images/pineTrees.jpg" alt="Birds flying above the forest trees">
@@ -153,7 +153,16 @@
         <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
         <span id="today"></span>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: [
+                'Rubik'
+            ]
+            }
+        });
+    </script>
 </body>
 
 </html>
