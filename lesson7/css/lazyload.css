@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+picture {
+    display: block;
+}
+
+
+[data-src] {
+    min-width: 300px;
+    min-height: 400px;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
