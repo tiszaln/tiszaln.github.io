@@ -127,11 +127,15 @@ figcaption {
     color: #31003c;
 }
 
-.gallery {
+.gallery, figure{
     display: block;
     max-height: 400px;
     width: 100%;
     margin: 0 auto;
+}
+
+figure {
+    margin-bottom: 10px;
 }
 
 section {
@@ -318,15 +322,6 @@ li img {
 h1 {
     text-align: center;
 }
-
-picture {
-    display: block;
-}
-
-
-
-
-
 
 [data-src] {
     width: 100%;
