@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Olsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./css/lazyload.css">
+
+
+    <title>Weather Facts</title>
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
+    <script src="./js/source.js"></script>
+</head>
+
+<body onload="copyYear()">
+    <header>
+        <div>
+            <img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun.">
+            <h1>WeatherFacts.app</h1>
+            <p>It's all that matters</p>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <button onclick="responsiveMenu()" id="toggleMenu">&#9776; Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="#2">Home</a></li>
+            <li><a href="#3">Preston</a></li>
+            <li><a href="#4">Soda Springs</a></li>
+            <li><a href="#5">Fish Haven</a></li>
+            <li><a href="#6">Storm Center</a></li>
+            <li><a class="current" href="#7">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Weather Gallery</h2>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/1036/400/300.jpg" alt="snow camp"></picture>
+            <figcaption>Snow in Preston</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/1037/400/300.jpg" alt="sunrise"></picture>
+            <figcaption>Clear skys in Soda Springs</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/1044/400/300.jpg" alt="foggy river"></picture>
+            <figcaption>Low visibility at Storm Center</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/1056/400/300.jpg" alt="cloudy lake"></picture>
+            <figcaption>Cloudy skys over Fish Haven</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/350/400/300.jpg" alt="overcast beach"></picture>
+            <figcaption>Fish Haven before storm</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/423/400/300.jpg" alt="snow covered trees"></picture>
+            <figcaption>Preston after evening snow</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/502/400/300.jpg" alt="sun through trees on grass"></picture>
+            <figcaption>Sunny day in Soda Springs</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/542/400/300.jpg" alt="cows in pasture"></picture>
+            <figcaption>Storm showers over Preston</figcaption>
+        </div>
+        <div>
+            <picture><img class="gallery" src="#" data-src="https://i.picsum.photos/id/654/400/300.jpg" alt="starry night"></picture>
+            <figcaption>Clear night sky at Storm Center</figcaption>
+        </div>
+
+    </main>
+    <footer>
+        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <span id="today"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: [
+                'Rubik'
+            ]
+            }
+        });
+    </script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+</html>
