@@ -4,8 +4,19 @@ h1 {
 
 picture {
     display: block;
+    margin-top: 10px;
 }
 
+.gallery {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 50px #333;
+}
 
 [data-src] {
     min-width: 300px;
