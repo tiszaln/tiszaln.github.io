@@ -7,13 +7,6 @@ picture {
     margin-top: 10px;
 }
 
-img {
-    display: block;
-    width: 300px;
-    height: 400px;
-    margin: 0 auto;
-}
-
 [data-src] {
     min-width: 300px;
     min-height: 400px;
@@ -24,6 +17,8 @@ img[data-src] {
 }
 
 img {
+    display:block;
     filter: blur(0em);
     transition: filter 0.5s;
+    margin: 0 auto;
 }
