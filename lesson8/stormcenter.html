@@ -58,7 +58,7 @@
                 </legend>
                 <label for="stormDate" class="top">Storm Date: <input type="date" name="stormDate"
                         id="stormDate"></label>
-                <label for="stormType" class="top">Storm Type: <input list="stormType"></label>
+                <label for="wType" class="top">Storm Type: <input list="stormType" id="wType"></label>
                 <datalist id="stormType">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -66,10 +66,11 @@
                     <option value="Thunder Storm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label for="stormSev">Storm Severity: <div><input type="range" name="stormSev" id="stormSev"
+                <label for="stormSev">Storm Severity:</label>
+                <input type="range" name="stormSev" id="stormSev"
                             value="0" min="0" max="10" oninput="stormSeverity(this.value)"
                             onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span></div>
-                    </label>
+                    
                 <label for="stormRegion" class="top">Storm Region: </label>
                 <select name="stormRegion" id="stormRegion" class="top">
                     <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
