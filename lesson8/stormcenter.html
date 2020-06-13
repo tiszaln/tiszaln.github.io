@@ -66,10 +66,10 @@
                     <option value="Thunder Storm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label for="stormSev">Storm Severity:</label>
+                <label class="top" for="stormSev">Storm Severity:</label>
                 <input type="range" name="stormSev" id="stormSev"
                             value="0" min="0" max="10" oninput="stormSeverity(this.value)"
-                            onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span></div>
+                            onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span>
                     
                 <label for="stormRegion" class="top">Storm Region: </label>
                 <select name="stormRegion" id="stormRegion" class="top">
@@ -83,10 +83,10 @@
                 <legend>
                     <h2>Additional Information</h2>
                 </legend>
-                <label for="dangerLevel" class="top">User in-danger level: </label>
-                <label class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
-                <label class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
-                <label class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
+                <label class="top">User in-danger level: </label>
+                <label for="yes" class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
+                <label for="maybe" class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
+                <label for="no" class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
                 <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30"
                         rows="10"></textarea></label>
             </fieldset>
