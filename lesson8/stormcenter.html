@@ -42,17 +42,23 @@
     <main>
         <form action="thankyou.html" method="get">
             <fieldset>
-                <legend><h2>Contact Information</h2></legend>
-                <label for="full name" class="top">Full Name: <input type="text" name="fullName" id="fullName" pattern="[a-zA-Z\s\-\.]{3,}" required></label>
+                <legend>
+                    <h2>Contact Information</h2>
+                </legend>
+                <label for="fullname" class="top">Full Name: <input type="text" name="fullName" id="fullName"
+                        pattern="[a-zA-Z\s\-\.]{3,}" required></label>
                 <label for="email" class="top">Email: <input type="email" name="email" id="email"
                         placeholder="you@gmail.com"></label>
                 <label for="phone" class="top">Phone: <input type="tel" name="phone" id="phone" required></label>
-                <label for="zip code" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
+                <label for="zipcode" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
             </fieldset>
             <fieldset>
-                <legend><h2>Storm Details</h2></legend>
-                <label for="storm date" class="top">Storm Date: <input type="date" name="stormDate" id="stormDate"></label>
-                <label for="storm type" class="top">Storm Type: <input list="stormType"></label>
+                <legend>
+                    <h2>Storm Details</h2>
+                </legend>
+                <label for="stormdate" class="top">Storm Date: <input type="date" name="stormDate"
+                        id="stormDate"></label>
+                <label for="stormtype" class="top">Storm Type: <input list="stormType"></label>
                 <datalist id="stormType">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -60,10 +66,12 @@
                     <option value="Thunder Storm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label for="storm severity">Storm Severity: <div><input type="range" name="stormSev" id="stormSev" value="0" min="0"
-                        max="10" oninput="stormSeverity(this.value)" onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span></div></label>
-                <label for="storm region" class="top">Storm Region: </label>
-                <select name="stormRegion" id="stormRegion"  class="top">
+                <label for="stormseverity">Storm Severity: <div><input type="range" name="stormSev" id="stormSev"
+                            value="0" min="0" max="10" oninput="stormSeverity(this.value)"
+                            onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span></div>
+                    </label>
+                <label for="stormregion" class="top">Storm Region: </label>
+                <select name="stormRegion" id="stormRegion" class="top">
                     <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
                     <option value="preston">Preston</option>
                     <option value="soda springs">Soda Springs</option>
@@ -71,12 +79,15 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend><h2>Additional Information</h2></legend>
-                <label for="user danger level" class="top">User in-danger level: </label>
+                <legend>
+                    <h2>Additional Information</h2>
+                </legend>
+                <label for="userdangerlevel" class="top">User in-danger level: </label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
-                <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
+                <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30"
+                        rows="10"></textarea></label>
             </fieldset>
             <input id="send" type="submit" value="Share Storm Details">
         </form>
