@@ -122,7 +122,8 @@ figcaption {
     color: #31003c;
 }
 
-.gallery, figure{
+.gallery,
+figure {
     display: block;
     max-height: 400px;
     width: 100%;
@@ -334,13 +335,16 @@ img {
 
 /* Form Settings */
 
-label.top, label.top input, select {
+label.top,
+label.top input,
+select {
     display: block;
     -moz-appearance: none;
     -webkit-appearance: none;
 }
 
-label.top input, select {
+label.top input,
+select {
     margin-bottom: 10px;
     border-radius: 5px;
     height: 44px;
@@ -355,7 +359,7 @@ form label.top input:required:valid {
 }
 
 label.radio {
-    display:block;
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -368,7 +372,7 @@ fieldset {
     border: 2px solid #31003C;
 }
 
-legend h2{
+legend h2 {
     margin: 10px 10px 0 10px;
 
 }
@@ -382,6 +386,7 @@ legend h2{
     width: 40%;
     min-width: 200px;
 }
+
 #stormSevValue {
     font-size: 1.2em;
     vertical-align: top;
@@ -389,7 +394,7 @@ legend h2{
 
 textarea {
     display: block;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 #thankyou {
