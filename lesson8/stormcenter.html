@@ -45,20 +45,20 @@
                 <legend>
                     <h2>Contact Information</h2>
                 </legend>
-                <label for="fullname" class="top">Full Name: <input type="text" name="fullName" id="fullName"
+                <label for="fullName" class="top">Full Name: <input type="text" name="fullName" id="fullName"
                         pattern="[a-zA-Z\s\-\.]{3,}" required></label>
                 <label for="email" class="top">Email: <input type="email" name="email" id="email"
                         placeholder="you@gmail.com"></label>
                 <label for="phone" class="top">Phone: <input type="tel" name="phone" id="phone" required></label>
-                <label for="zipcode" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
+                <label for="zip" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
             </fieldset>
             <fieldset>
                 <legend>
                     <h2>Storm Details</h2>
                 </legend>
-                <label for="stormdate" class="top">Storm Date: <input type="date" name="stormDate"
+                <label for="stormDate" class="top">Storm Date: <input type="date" name="stormDate"
                         id="stormDate"></label>
-                <label for="stormtype" class="top">Storm Type: <input list="stormType"></label>
+                <label for="stormType" class="top">Storm Type: <input list="stormType"></label>
                 <datalist id="stormType">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -66,11 +66,11 @@
                     <option value="Thunder Storm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label for="stormseverity">Storm Severity: <div><input type="range" name="stormSev" id="stormSev"
+                <label for="stormSev">Storm Severity: <div><input type="range" name="stormSev" id="stormSev"
                             value="0" min="0" max="10" oninput="stormSeverity(this.value)"
                             onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span></div>
                     </label>
-                <label for="stormregion" class="top">Storm Region: </label>
+                <label for="stormRegion" class="top">Storm Region: </label>
                 <select name="stormRegion" id="stormRegion" class="top">
                     <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
                     <option value="preston">Preston</option>
@@ -82,7 +82,7 @@
                 <legend>
                     <h2>Additional Information</h2>
                 </legend>
-                <label for="userdangerlevel" class="top">User in-danger level: </label>
+                <label for="dangerLevel" class="top">User in-danger level: </label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
                 <label class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
