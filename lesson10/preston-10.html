@@ -19,7 +19,7 @@
     <script src="./js/windChill.js"></script>
 </head>
 
-<body onload="copyYear(), calcWindChill()">
+<body onload="copyYear(), calcWindChill(5604473)">
     <aside id="pancakeDay">
         Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
     </aside>
@@ -81,28 +81,28 @@
             <div id="fiveDayLayout">
                 <div class="days">
                     <p id="day0">Wed</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>89 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon0" src="" alt=""></p>
+                    <p><span id="5day0"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day1">Thu</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>87 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon1" src="" alt=""></p>
+                    <p><span id="5day1"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day2">Fri</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>78 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon2" src="" alt=""></p>
+                    <p><span id="5day2"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day3">Sat</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>75 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon3" src="" alt=""></p>
+                    <p><span id="5day3"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day4">Sun</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>72 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon4" src="" alt=""></p>
+                    <p><span id="5day4"></span> &#8457;</p>
                 </div>
 
             </div>
@@ -153,7 +153,7 @@
 
     </main>
     <footer>
-        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <div>&copy;WeatherFacts.app | OpenWeather | Daniel Olsen</div>
         <span id="today"></span>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

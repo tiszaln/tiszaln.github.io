@@ -15,7 +15,7 @@ function copyYear() {
     };
     var daysOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     for(var i = 0; i < 5; ++i) {
-        document.getElementById("day" + i).innerHTML = daysOfTheWeek[today.getDay() + i];
+        document.getElementById("day" + i).innerHTML = daysOfTheWeek[today.getDay() + i + 1];
     }
 };
 
