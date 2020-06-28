@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Olsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/stormCenter/small.css">
+    <link rel="stylesheet" href="./css/stormCenter/medium.css">
+    <link rel="stylesheet" href="./css/stormCenter/large.css">
+
+
+    <title>Weather Facts</title>
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
+    <script src="./js/source.js"></script>
+    <script src="./js/severity.js"></script>
+</head>
+
+<body onload="copyYear()">
+    <header>
+        <div>
+            <img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun.">
+            <h1>WeatherFacts.app</h1>
+            <p>It's all that matters</p>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <button onclick="responsiveMenu()" id="toggleMenu">&#9776; Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="#4">Soda Springs</a></li>
+            <li><a href="#5">Fish Haven</a></li>
+            <li><a class="current" href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <h2 id="thankyou">We have received your storm report. Thank you!</h2>
+
+    </main>
+    <footer>
+        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <span id="today"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* Home Page */
+@media only screen and (min-width: 50em){
+    header div h1 {
+        font-size: 3.2em;
+        padding-top: 10px;
+    }
+
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section.cards {
+        display: block;
+    }
+
+    .cards:nth-child(1) {
+        order:2;
+    }
+}
