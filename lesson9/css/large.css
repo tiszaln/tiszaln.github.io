@@ -18,4 +18,8 @@
     section.cards {
         display: block;
     }
+
+    .cards:nth-child(1) {
+        order:2;
+    }
 }
