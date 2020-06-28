@@ -127,6 +127,15 @@ section h2 {
 
 }
 
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cards:nth-child(1) {
+    order: 3;
+}
+
 section.cards h3 {
     margin: 0 0 10px 1%;
     text-align: left;
