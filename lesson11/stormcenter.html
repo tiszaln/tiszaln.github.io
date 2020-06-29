@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Olsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/stormCenter/small.css">
+    <link rel="stylesheet" href="./css/stormCenter/medium.css">
+    <link rel="stylesheet" href="./css/stormCenter/large.css">
+
+
+    <title>Weather Facts</title>
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
+    <script src="./js/source.js"></script>
+    <script src="./js/severity.js"></script>
+</head>
+
+<body onload="copyYear()">
+    <header>
+        <div>
+            <img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun.">
+            <h1>WeatherFacts.app</h1>
+            <p>It's all that matters</p>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <button onclick="responsiveMenu()" id="toggleMenu">&#9776; Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="#4">Soda Springs</a></li>
+            <li><a href="#5">Fish Haven</a></li>
+            <li><a class="current" href="#6">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>
+                    <h2>Contact Information</h2>
+                </legend>
+                <label for="fullName" class="top">Full Name: <input type="text" name="fullName" id="fullName"
+                        pattern="[a-zA-Z\s\-\.]{3,}" required></label>
+                <label for="email" class="top">Email: <input type="email" name="email" id="email"
+                        placeholder="you@gmail.com"></label>
+                <label for="phone" class="top">Phone: <input type="tel" name="phone" id="phone" required></label>
+                <label for="zip" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Storm Details</h2>
+                </legend>
+                <label for="stormDate" class="top">Storm Date: <input type="date" name="stormDate"
+                        id="stormDate"></label>
+                <label for="wType" class="top">Storm Type: <input list="stormType" id="wType"></label>
+                <datalist id="stormType">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunder Storm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                <label class="top" for="stormSev">Storm Severity:</label>
+                <input type="range" name="stormSev" id="stormSev"
+                            value="0" min="0" max="10" oninput="stormSeverity(this.value)"
+                            onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span>
+                    
+                <label for="stormRegion" class="top">Storm Region: </label>
+                <select name="stormRegion" id="stormRegion" class="top">
+                    <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda springs">Soda Springs</option>
+                    <option value="fish haven">Fish Haven</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Additional Information</h2>
+                </legend>
+                <label class="top">User in-danger level: </label>
+                <label for="yes" class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
+                <label for="maybe" class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
+                <label for="no" class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
+                <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30"
+                        rows="10"></textarea></label>
+            </fieldset>
+            <input id="send" type="submit" value="Share Storm Details">
+        </form>
+
+
+
+    </main>
+    <footer>
+        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <span id="today"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+</html>

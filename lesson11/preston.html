@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./css/towns/small.css">
+    <link rel="stylesheet" href="./css/towns/medium.css">
+    <link rel="stylesheet" href="./css/towns/large.css">
 
 
     <title>Weather Facts</title>
@@ -19,7 +19,7 @@
     <script src="./js/windChill.js"></script>
 </head>
 
-<body onload="copyYear(), calcWindChill()">
+<body onload="copyYear(), calcWindChill(5604473)">
     <aside id="pancakeDay">
         Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
     </aside>
@@ -34,12 +34,12 @@
     <nav>
         <button onclick="responsiveMenu()" id="toggleMenu">&#9776; Menu</button>
         <ul id="menu" class="hide">
-            <li><a href="#2">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a class="current" href="#3">Preston</a></li>
             <li><a href="#4">Soda Springs</a></li>
             <li><a href="#5">Fish Haven</a></li>
-            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -50,12 +50,12 @@
                 <h3>Weather Summary</h3>
                 <hr>
                 <div class="sumgrid">
-                    <h4>Current:</h4>
-                    <p>Sunny</p>
+                    <h4>Currently:</h4>
+                    <p><span id="condition"></span></p>
                 </div>
                 <div class="sumgrid">
-                    <h4>High:</h4>
-                    <p><span id="temp">50</span>&#8457;</p>
+                    <h4>Actual:</h4>
+                    <p><span id="temp"></span>&#8457;</p>
                 </div>
                 <div class="sumgrid">
                     <h4>Wind Chill:</h4>
@@ -63,17 +63,17 @@
                 </div>
                 <div class="sumgrid">
                     <h4>Humidity:</h4>
-                    <p>69%</p>
+                    <p><span id="humidity"></span>%</p>
                 </div>
                 <div class="sumgrid">
                     <h4>Wind Speed:</h4>
-                    <p><span id="speed">16</span>mph</p>
+                    <p><span id="speed"></span> mph</p>
                 </div>
             </section>
-            <img src="./images/franklinLarge.jpg" alt="Birds flying above the forest trees" sizes="100vw"
-                    srcset="./images/franklinSmall.jpg 491w,
+            <img src="./images/pineTrees.jpg" alt="Birds flying above the forest trees" sizes="100vw">
+                    <!-- srcset="./images/franklinSmall.jpg 491w,
                             ./images/franklinMed.jpg 736w,
-                            ./images/franklinLarge.jpg 984w">
+                            ./images/franklinLarge.jpg 984w"> -->
 
         </div>
         <section id="fiveDay">
@@ -81,28 +81,28 @@
             <div id="fiveDayLayout">
                 <div class="days">
                     <p id="day0">Wed</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>89 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon0" src="" alt=""></p>
+                    <p><span id="5day0"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day1">Thu</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>87 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon1" src="" alt=""></p>
+                    <p><span id="5day1"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day2">Fri</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>78 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon2" src="" alt=""></p>
+                    <p><span id="5day2"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day3">Sat</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>75 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon3" src="" alt=""></p>
+                    <p><span id="5day3"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="day4">Sun</p>
-                    <p class="weatherIcon">&#9728;&#65039;</p>
-                    <p>72 &#8457;</p>
+                    <p class="weatherIcon"><img id="5dayicon4" src="" alt=""></p>
+                    <p><span id="5day4"></span> &#8457;</p>
                 </div>
 
             </div>
@@ -111,17 +111,12 @@
         <article id="dayArticle">
             <img id="articleImage" src="./images/sunForest.jpg" alt="Sun light shining through forest trees">
             <div>
-                <h3>Founders Day Fresco</h3>
-                <p>By Janica Juarez</p>
-                <p>I'm baby lo-fi cold-pressed artisan heirloom tousled, pinterest brooklyn hell of pitchfork kale chips
-                    master cleanse raclette tattooed. Tofu photo booth green juice poke pour-over cronut 3 wolf moon,
-                    ugh disrupt before they sold out live-edge aesthetic viral marfa pitchfork. Hell of quinoa subway
-                    tile chicharrones actually. Heirloom hell of echo park leggings vexillologist.</p>
-                <p>Blog tumeric chillwave gluten-free vape. Mumblecore kombucha art party pitchfork, typewriter deep v
-                    small batch coloring book letterpress chambray banh mi. Meh tofu pinterest ennui bespoke.
-                    Cold-pressed unicorn celiac, four dollar toast four loko kitsch kickstarter. Taxidermy banh mi
-                    street art chartreuse raw denim microdosing austin four loko normcore woke bitters biodiesel
-                    gastropub VHS gochujang.</p>
+                <h3>Wild weather</h3>
+                <p>By Necia Seamons</p>
+                <p>Both the Preston School District and West Side School District closed Feb. 14, due to the weather. At least eight inches of heavy wet snow fell on the valley floor, much more in the higher elevations.</p>
+                <p>According the Preston City Public Works director, John Balls, city crews had their six plow trucks and a loader clearing the streets of Preston twice Feb. 13, trying to stay ahead of the amount of snow that fell. They were back out plowing snow at 3 a.m. Thursday morning.</p>
+                <p>The National Weather Service issued a severe weather warning which included expected winds gusting as high as 45 mph. The Idaho State Police closed I-15 from Malad north to milepost 27, for a large portion of the day due to low visibility and dangerous driving conditions.</p>
+                <a href="https://www.hjnews.com/preston/news/wild-weather/article_a7c9fb44-346b-11e9-a33c-df39357cbb82.html" target="blank">Read More</a>
             </div>
 
 
@@ -153,7 +148,7 @@
 
     </main>
     <footer>
-        <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
+        <div>&copy;WeatherFacts.app | <a href="https://openweathermap.org/" target="blank">OpenWeatherMap</a> | Daniel Olsen</div>
         <span id="today"></span>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

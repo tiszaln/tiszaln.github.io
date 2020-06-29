@@ -1,0 +1,190 @@
+body {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;  
+}
+
+header {
+    background-color: #000025;
+    height: 100px;
+    margin: 0;
+}
+
+header div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 30px;
+    font-size: 1.4em;
+    text-align: center;
+    padding-right: 10px;
+}
+
+header img {
+    float: left;
+    max-width: 100px;
+}
+
+header div p {
+    margin: 0;
+    padding-right:15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+hr {
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+nav {
+    clear: left;
+    margin: 0;
+    width: 100%;
+}
+
+nav button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+    padding: 13px 0;
+    text-align: center;
+    background-color: #31003C;
+    font-weight: bold;
+    border-bottom: 1px dotted #90a8c3;
+    color: #ada7c9;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    border-bottom: 5px;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #31003C;
+    font-weight: bold;
+    border-bottom: 1px dotted #90a8c3;
+}
+
+nav ul li a:link {
+    color: #ada7c9;
+    
+}
+
+nav ul li a:visited {
+    color: #ada7c9;
+}
+nav ul li a:hover, nav button:hover {
+    color: #31003C;
+    background-color: #ada7c9;
+}
+
+nav ul li a:active {
+    color: white;
+    background-color: #90a8c3;
+}
+
+main {
+    padding-bottom: 5px;
+}
+
+main h2 {
+    text-align: center;
+    color: #31003C;
+
+   
+}
+
+section {
+    border-radius: 5px;
+    background-color: #ada7c9;
+    margin:10px;
+    padding:10px;
+}
+
+section h2 {
+    text-align: right;
+    padding: 0 0 10px;
+    text-decoration: underline;
+    margin:0 2% 0 0;
+
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cards:nth-child(1) {
+    order: 3;
+}
+
+section.cards h3 {
+    margin: 0 0 10px 1%;
+    text-align: left;
+    color: #31003C;
+}
+
+section p {
+    margin-left: 2%;
+    color: #31003C;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #31003C;
+    padding: 15px;
+    font-size: 0.8em;
+    color: #ada7c9;
+    border: 1px dotted #90a8c3;
+}
+
+footer a {
+    color: #ada7c9;
+    text-decoration: none;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.showMenu {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.townImage {
+    display: block;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+#wireframe {
+    text-align: center;
+}
+
+#callToAction {
+    padding: 0 10px;
+}
