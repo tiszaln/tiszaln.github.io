@@ -212,6 +212,8 @@ footer a {
 
 .current {
     text-decoration: underline;
+    background-color: #ada7c9;
+    color: #31003C !important;
 }
 
 .showMenu {

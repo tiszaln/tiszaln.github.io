@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/stormCenter/large.css">
 
 
-    <title>Weather Facts</title>
+    <title>Submission Confirmation</title>
     <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
     <meta name="description" content="Basic page content for Preston, including a header, navigation and footer.">
     <script src="./js/source.js"></script>
@@ -22,7 +22,7 @@
 <body onload="copyYear()">
     <header>
         <div>
-            <img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun.">
+            <a href="./index.html"><img src="./images/whitesun.svg" alt="Weather Facts' logo showing sun."></a>
             <h1>WeatherFacts.app</h1>
             <p>It's all that matters</p>
         </div>
@@ -44,6 +44,30 @@
         <h2 id="thankyou">We have received your storm report. Thank you!</h2>
 
     </main>
+    <br>
+        <section id="contactSection">
+
+            <div>
+                <h3>Contact information</h3>
+                <ul id="contact">
+                    <li>&#128236; 1111 Fake Street,<br>Preston ID 83263</li>
+                    <li>&#128241; (208)-000-0000</li>
+                    <li>&#128187; us@weatherfacts.com</li>
+                </ul>
+                <br>
+                <ul id="socials">
+                    <li class="svg"><img src="./images/facebook.svg" alt="facebook logo"></li>
+                    <li class="svg"><img src="./images/twitter.svg" alt="twitter logo"></li>
+                    <li class="svg"><img src="./images/pinterest.svg" alt="pintrest logo"></li>
+                    <li class="svg"><img src="./images/whatsapp.svg" alt="whatsapp logo"></li>
+
+                </ul>
+            </div>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGjw2NJEzzUTACrfM1npnwX2WbiVti-mI&q=Preston+ID"
+                allowfullscreen>
+            </iframe>
+        </section>
     <footer>
         <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
         <span id="today"></span>

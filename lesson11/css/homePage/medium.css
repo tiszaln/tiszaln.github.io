@@ -78,10 +78,10 @@
  */
 
     
-
+/* 
     section h2{
-        font-size: 2.2em;
-    }
+        font-size: 1em;
+    } */
 
     .townImage{
         width: 98%;
@@ -100,4 +100,26 @@
     /*   main div {
         grid-template-columns: 1fr 1fr;
     } */
+
+    #contactSection {
+        clear: right;
+        height: 340px;
+        padding: 25px 0;
+        max-width: 900px;
+        width: 95%;
+    }
+
+    #contactSection div {
+        float: right;
+        width: 48%;
+        margin-top: 50px;
+    }
+
+    #map {
+        max-width: 48%;
+    }
+
+    footer {
+        clear: right;
+    }
 }
