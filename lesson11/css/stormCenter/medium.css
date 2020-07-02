@@ -134,8 +134,9 @@
     #contactSection {
         clear: right;
         height: 340px;
-        padding-bottom: 25px;
-        padding-top: 25px;
+        padding: 25px 0;
+        max-width: 900px;
+        width: 95%;
     }
 
     #contactSection div {

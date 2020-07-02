@@ -217,6 +217,8 @@ footer a {
 
 .current {
     text-decoration: underline;
+    background-color: #ada7c9;
+    color: #31003C !important;
 }
 
 .showMenu {
@@ -255,6 +257,7 @@ article h3 {
 #contactSection {
     background-color: #ada7c9;
     padding: 15px;
+    margin:0 auto;
 }
 
 #contactSection div {
@@ -395,7 +398,7 @@ legend h2 {
 textarea {
     display: block;
     margin-top: 3px;
-    width: 98%;
+    width: 95%;
 }
 
 #thankyou {

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/homePage/large.css">
 
 
-    <title>Weather Facts</title>
+    <title>Weather Facts Home Page</title>
     <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
     <meta name="description"
         content="Basic page content for Preston, including a header, navigation and footer.">
@@ -44,12 +44,49 @@
     <main>
 
         <h2 id="callToAction">Checkout our local weather news!</h2>
+        <article id="dayArticle">
+            <img id="articleImage" src="./images/sunForest.jpg" alt="Sun light shining through forest trees">
+            <div>
+                <h3>Wild weather</h3>
+                <p>By Necia Seamons</p>
+                <p>Both the Preston School District and West Side School District closed Feb. 14, due to the weather. At least eight inches of heavy wet snow fell on the valley floor, much more in the higher elevations.</p>
+                <p>According the Preston City Public Works director, John Balls, city crews had their six plow trucks and a loader clearing the streets of Preston twice Feb. 13, trying to stay ahead of the amount of snow that fell. They were back out plowing snow at 3 a.m. Thursday morning.</p>
+                <p>The National Weather Service issued a severe weather warning which included expected winds gusting as high as 45 mph. The Idaho State Police closed I-15 from Malad north to milepost 27, for a large portion of the day due to low visibility and dangerous driving conditions.</p>
+                <a href="https://www.hjnews.com/preston/news/wild-weather/article_a7c9fb44-346b-11e9-a33c-df39357cbb82.html" target="blank">Read More</a>
+            </div>
+
+
+        </article>
         <div class="towns"></div>
         <section>
             <a href="./wireframes.html"><h3 id="wireframe">Home Page Wireframes</h3> </a>
         </section>
            
     </main>
+    <br>
+        <section id="contactSection">
+
+            <div>
+                <h3>Contact information</h3>
+                <ul id="contact">
+                    <li>&#128236; 1111 Fake Street,<br>Preston ID 83263</li>
+                    <li>&#128241; (208)-000-0000</li>
+                    <li>&#128187; us@weatherfacts.com</li>
+                </ul>
+                <br>
+                <ul id="socials">
+                    <li class="svg"><img src="./images/facebook.svg" alt="facebook logo"></li>
+                    <li class="svg"><img src="./images/twitter.svg" alt="twitter logo"></li>
+                    <li class="svg"><img src="./images/pinterest.svg" alt="pintrest logo"></li>
+                    <li class="svg"><img src="./images/whatsapp.svg" alt="whatsapp logo"></li>
+
+                </ul>
+            </div>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGjw2NJEzzUTACrfM1npnwX2WbiVti-mI&q=Preston+ID"
+                allowfullscreen>
+            </iframe>
+        </section>
     <footer>
         <div>&copy;WeatherFacts.app | Attributions | Daniel Olsen</div>
         <span id="today"></span>
