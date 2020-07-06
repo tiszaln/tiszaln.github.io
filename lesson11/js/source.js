@@ -3,9 +3,9 @@ var year = today.getFullYear();
 
 var options = { weekday: 'long', day: 'numeric', month: 'long',  year: 'numeric'};
 
-var current = today.toLocaleDateString('en-UK', options)
+var current = today.toLocaleDateString('en-UK', options);
 
-console.log(current);
+/* console.log(current); */
 
 function copyYear() {
 /*     document.getElementById("copyright").innerHTML = year; */
