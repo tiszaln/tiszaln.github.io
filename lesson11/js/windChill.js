@@ -5,7 +5,7 @@ function calcWindChill(id) {
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        /* console.log(jsObject); */
         document.getElementById('temp').textContent = Math.round(jsObject.main.temp);
         document.getElementById('condition').textContent = jsObject.weather[0].description;
         document.getElementById('humidity').textContent = jsObject.main.humidity;
@@ -27,7 +27,7 @@ function calcWindChill(id) {
     fetch(apiURL5)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        /* console.log(jsObject); */
         var x = 0;
         for(var i=0; i <= 39; ++i) {
             if((jsObject.list[i].dt_txt).match(/18:00/g)) {
