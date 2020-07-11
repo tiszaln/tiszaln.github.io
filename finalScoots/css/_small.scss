@@ -1,0 +1,102 @@
+/*General*/
+body {
+    background-color: $raisinBlack;
+    font-family: $context;
+    color: $pinkSherbet;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header;
+    color: $lightCoral;
+}
+
+
+
+a:link {
+    text-decoration: none;
+    color: $lightCoral;
+}
+
+a:visited {
+    color: $cyanProcess;
+}
+
+
+
+
+/*Header*/
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+}
+
+/*Navigation*/
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+a h3 {
+    padding: 10px 0;
+    letter-spacing: 2px;
+    margin: 0;
+    
+}
+
+a h3:link {
+    text-decoration: none;
+}
+
+a h3:visited {
+    color: $cyanProcess;
+}
+
+a h3:hover {
+    background-color: $lightCoral;
+    color: $raisinBlack;
+    animation-name: navi;
+    animation-duration: 0.4s;
+}
+
+#current {
+    background-color: $lightCoral;
+    color: $raisinBlack;
+    text-decoration: 3px underline;
+}
+
+@keyframes navi {
+    from {background-color:$raisinBlack;}
+    to {background-color: $lightCoral;}
+  }
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: $platinum;
+    max-width: 900px;
+    margin:10px auto;
+    padding: 10px;
+    border-top: 1px solid $platinum;
+    p {
+        display: inline;
+    }
+}
+
+/*Home Page*/
