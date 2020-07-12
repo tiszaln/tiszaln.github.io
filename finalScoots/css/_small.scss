@@ -8,9 +8,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $header;
     color: $lightCoral;
+    letter-spacing: 2px;
 }
-
-
 
 a:link {
     text-decoration: none;
@@ -21,11 +20,7 @@ a:visited {
     color: $cyanProcess;
 }
 
-
-
-
 /*Header*/
-
 header {
     max-width: 900px;
     margin: 0 auto;
@@ -39,12 +34,14 @@ header {
 nav {
     max-width: 900px;
     margin: 0 auto;
+    border-bottom: 1px solid $platinum;
 }
 
 nav ul {
     text-align: center;
     margin: 0;
     padding: 0;
+    border: 5px solid transparent;
 }
 
 nav li {
@@ -53,9 +50,7 @@ nav li {
 
 a h3 {
     padding: 10px 0;
-    letter-spacing: 2px;
     margin: 0;
-    
 }
 
 a h3:link {
@@ -84,18 +79,29 @@ a h3:hover {
     to {background-color: $lightCoral;}
   }
 
-/*Footer*/
+/*Main*/
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    section {
+        margin: 10px;
+    }
+}
 
+/*Footer*/
 footer {
     display: flex;
     justify-content: space-evenly;
     color: $platinum;
     max-width: 900px;
-    margin:10px auto;
-    padding: 10px;
+    margin:8px auto;
     border-top: 1px solid $platinum;
     p {
         display: inline;
+
+        i {
+            font-size: 20px;
+        }
     }
 }
 

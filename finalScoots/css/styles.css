@@ -314,7 +314,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bangers", cursive;
-  color: #EF6F6C; }
+  color: #EF6F6C;
+  letter-spacing: 2px; }
 
 a:link {
   text-decoration: none;
@@ -334,19 +335,20 @@ header {
 /*Navigation*/
 nav {
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-bottom: 1px solid #E5E5E5; }
 
 nav ul {
   text-align: center;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 5px solid transparent; }
 
 nav li {
   list-style: none; }
 
 a h3 {
   padding: 10px 0;
-  letter-spacing: 2px;
   margin: 0; }
 
 a h3:link {
@@ -371,17 +373,25 @@ a h3:hover {
     background-color: #231F20; }
   to {
     background-color: #EF6F6C; } }
+/*Main*/
+main {
+  max-width: 900px;
+  margin: 0 auto; }
+  main section {
+    margin: 10px; }
+
 /*Footer*/
 footer {
   display: flex;
   justify-content: space-evenly;
   color: #E5E5E5;
   max-width: 900px;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 8px auto;
   border-top: 1px solid #E5E5E5; }
   footer p {
     display: inline; }
+    footer p i {
+      font-size: 20px; }
 
 /*Home Page*/
 /* end of media query */
