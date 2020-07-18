@@ -364,7 +364,7 @@ a h3:hover {
   animation-duration: 0.4s; }
 
 #current {
-  background-color: #EF6F6C;
+  background-color: #E5E5E5;
   color: #231F20;
   text-decoration: 3px underline; }
 
@@ -394,6 +394,21 @@ footer {
       font-size: 20px; }
 
 /*Home Page*/
+#callToAction {
+  position: relative; }
+  #callToAction img {
+    max-width: 900px;
+    width: 100%;
+    margin: 5px auto;
+    object-fit: cover;
+    opacity: 0.4; }
+  #callToAction div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /*Navigation*/
