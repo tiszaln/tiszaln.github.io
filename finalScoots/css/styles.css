@@ -331,9 +331,13 @@ header {
   header h1 {
     font-size: 60px;
     margin: 10px; }
+  header img {
+    width: 20%;
+    float: right; }
 
 /*Navigation*/
 nav {
+  clear: both;
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid #E5E5E5; }
@@ -393,6 +397,18 @@ footer {
     footer p i {
       font-size: 20px; }
 
+/*Buttons*/
+.button {
+  border: 2px solid #EF6F6C;
+  border-radius: 8px;
+  background-color: #EF6F6C;
+  color: #E5E5E5;
+  padding: 3px; }
+
+.button:hover {
+  background-color: #E5E5E5;
+  color: #EF6F6C; }
+
 /*Home Page*/
 #callToAction {
   position: relative; }
@@ -403,12 +419,15 @@ footer {
     object-fit: cover;
     opacity: 0.4; }
   #callToAction div {
+    text-align: center; }
+
+@media only screen and (min-width: 560px) {
+  /*Home Page*/
+  #callToAction div {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
+    transform: translate(-50%, -50%); } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /*Navigation*/
