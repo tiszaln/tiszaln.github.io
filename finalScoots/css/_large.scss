@@ -1,5 +1,14 @@
 /*Navigation*/
-nav li {
+nav {
+    li {
     display: inline-block;
     width: 19%;
+    }
+    button {
+        display: none;
+    }
+}
+
+.hide {
+    display: block;
 }

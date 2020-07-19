@@ -8,17 +8,22 @@
     <meta name="author" content="Daniel Olsen">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/792d9b284b.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/date.js"> </script>
 
     <title>Scoots Home Page</title>
 </head>
 
-<body>
+<body onload="fiveDay()">
     <header>
-        <img src="./images/scooterLogo.svg" alt="Scoot's logo">
-        <h1>Scoots</h1>
+        <a href="./index.html">
+            <img src="./images/scooterLogo.svg" alt="Scoot's logo">
+            <h1>Scoots</h1>
+        </a>
     </header>
     <nav>
-        <ul>
+        <button onclick="responsiveMenu()" id="hamburger">&#9776;</button>
+        <ul id="menu" class="hide">
             <li>
                 <a href="#"><h3 id="current">Home</h3></a>
             </li>
@@ -42,13 +47,49 @@
             <div>
                 <h2>Visit one of our locations!</h2>
                 <p>Start your rental, it's only a click away...</p>
-                <p class="button">Playa del Carmen-Conzumel Ferry Dock</p>
-                <p class="button">Terminal Puerta Maya</p>
+                <a href="./reservations.html"><p class="button">Playa del Carmen-Conzumel Ferry Dock</p></a>
+                <a href="./reservations.html"><p class="button">Terminal Puerta Maya</p></a>
             </div>
         </section>
-        <section>
-            <h3>Weather</h3>
-            <h3>We are here...</h3>
+        <section id="localInfo">
+            <div>
+                <h3>Weather</h3>
+                <h4>Current</h4>
+                <p>Actual: <span id="temp"></span>&#8457;</p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <h4>5-Day Forecast</h4>
+                <div id="fivedayforecast">
+                    <div>
+                        <p id="day0"></p>
+                        <img id="5dayicon0" src="#" alt="">
+                        <p><span id="5day0"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day1"></p>
+                        <img id="5dayicon1" src="#" alt="">
+                        <p><span id="5day1"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day2"></p>
+                        <img id="5dayicon2" src="#" alt="">
+                        <p><span id="5day2"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day3"></p>
+                        <img id="5dayicon3" src="#" alt="">
+                        <p><span id="5day3"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day4"></p>
+                        <img id="5dayicon4" src="#" alt="">
+                        <p><span id="5day4"></span>&#8457;</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>We are here...</h3>
+            </div>
         </section>
         <section>
             <h2>Some of our offerings</h2>
@@ -62,6 +103,7 @@
         <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
         <p>Scoots Inc.</p>
     </footer>
+    <script src="./js/weather.js" onload="getWeather(3530103)"></script>
 </body>
 
 </html>

@@ -40,18 +40,35 @@ nav {
     max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid $platinum;
+    ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 5px solid transparent;
+    }
+    li {
+        list-style: none;
+    }
+    button {
+        display: block;
+        color: $lightCoral;
+        margin: 10px;
+        text-align: center;
+        padding: 1em 1.1em;
+        background-color: $raisinBlack;
+        border-radius: 30%;
+        border: 1px solid $lightCoral;
+    }
 }
 
-nav ul {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    border: 5px solid transparent;
+.showMenu {
+    display: block;
 }
 
-nav li {
-    list-style: none;
+.hide {
+    display: none;
 }
+
 
 a h3 {
     padding: 10px 0;
@@ -116,7 +133,7 @@ footer {
     border-radius: 8px;
     background-color: $lightCoral;
     color: $platinum;
-    padding: 3px;
+    padding: 10px 5px;
 
 }
 
@@ -137,5 +154,30 @@ footer {
     }
     div {
         text-align: center;
+        .button {
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
+
+}
+
+section {
+    h3 {
+        text-align: center;
+    }
+}
+
+#fivedayforecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    div {
+        text-align: center;
+        width:20%;
+        img {
+            max-width: 100px;
+            width: 90%;
+        }
     }
 }

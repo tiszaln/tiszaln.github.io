@@ -341,15 +341,28 @@ nav {
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid #E5E5E5; }
+  nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 5px solid transparent; }
+  nav li {
+    list-style: none; }
+  nav button {
+    display: block;
+    color: #EF6F6C;
+    margin: 10px;
+    text-align: center;
+    padding: 1em 1.1em;
+    background-color: #231F20;
+    border-radius: 30%;
+    border: 1px solid #EF6F6C; }
 
-nav ul {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  border: 5px solid transparent; }
+.showMenu {
+  display: block; }
 
-nav li {
-  list-style: none; }
+.hide {
+  display: none; }
 
 a h3 {
   padding: 10px 0;
@@ -403,7 +416,7 @@ footer {
   border-radius: 8px;
   background-color: #EF6F6C;
   color: #E5E5E5;
-  padding: 3px; }
+  padding: 10px 5px; }
 
 .button:hover {
   background-color: #E5E5E5;
@@ -420,8 +433,33 @@ footer {
     opacity: 0.4; }
   #callToAction div {
     text-align: center; }
+    #callToAction div .button {
+      width: 90%;
+      margin: 10px auto; }
+
+section h3 {
+  text-align: center; }
+
+#fivedayforecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  #fivedayforecast div {
+    text-align: center;
+    width: 20%; }
+    #fivedayforecast div img {
+      max-width: 100px;
+      width: 90%; }
 
 @media only screen and (min-width: 560px) {
+  /*Header*/
+  header img {
+    width: 10%; }
+
+  /*Navigation*/
+  nav button {
+    margin: 10px; }
+
   /*Home Page*/
   #callToAction div {
     position: absolute;
@@ -433,5 +471,10 @@ footer {
   /*Navigation*/
   nav li {
     display: inline-block;
-    width: 19%; } }
+    width: 19%; }
+  nav button {
+    display: none; }
+
+  .hide {
+    display: block; } }
 /* end of media query */
