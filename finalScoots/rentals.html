@@ -13,7 +13,7 @@
     <title>Scoots Home Page</title>
 </head>
 
-<body>
+<body onload="copyYear()">
     <header>
         <a href="./index.html">
             <img src="./images/scooterLogo.svg" alt="Scoot's logo">
@@ -48,12 +48,19 @@
         </section>
     </main>
     <footer>
-        <p>Follow Us!</p>
-        <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
-        <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
-        <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
-        <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
-        <p>Scoots Inc.</p>
+        <div>
+            <p>Follow Us!</p>
+            <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
+            <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
+            <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
+            <p>Scoots Inc.</p>
+        </div>
+        <div>
+            <p>&copy;<span id="copyright"></span> Daniel A. Olsen</p>
+            <p id="lastUpdate"></p>
+            <p><a href="./resources.html">Resources</a></p>
+        </div>
     </footer>
 </body>
 

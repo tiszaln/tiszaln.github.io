@@ -11,3 +11,8 @@ function fiveDay() {
         document.getElementById("day" + i).innerHTML = daysOfTheWeek[today.getDay() + i + 1];
     }
 };
+
+function copyYear() {
+    document.getElementById("copyright").innerHTML = year;
+    document.getElementById("lastUpdate").innerHTML = "Last Updated: " + document.lastModified;
+};

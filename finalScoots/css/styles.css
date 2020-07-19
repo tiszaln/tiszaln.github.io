@@ -398,17 +398,21 @@ main {
     margin: 10px; }
 
 /*Footer*/
-footer {
+footer div {
   display: flex;
   justify-content: space-evenly;
   color: #E5E5E5;
   max-width: 900px;
-  margin: 8px auto;
-  border-top: 1px solid #E5E5E5; }
-  footer p {
+  margin: 8px auto; }
+  footer div p {
     display: inline; }
-    footer p i {
+    footer div p i {
       font-size: 20px; }
+footer div:nth-child(1) {
+  border-top: 1px solid #E5E5E5; }
+footer div:nth-child(2) {
+  flex-direction: column;
+  text-align: center; }
 
 /*Buttons*/
 .button {
@@ -430,12 +434,15 @@ footer {
     width: 100%;
     margin: 5px auto;
     object-fit: cover;
-    opacity: 0.4; }
+    opacity: 0.3; }
   #callToAction div {
     text-align: center; }
+    #callToAction div p {
+      font-size: 1.5rem; }
     #callToAction div .button {
       width: 90%;
-      margin: 10px auto; }
+      margin: 10px auto;
+      font-size: 1rem; }
 
 section h3 {
   text-align: center; }
@@ -443,12 +450,19 @@ section h3 {
 #fivedayforecast {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  border: 5px groove #01B8F0;
+  padding: 10px; }
   #fivedayforecast div {
     text-align: center;
     width: 20%; }
+    #fivedayforecast div p {
+      margin: 0;
+      font-weight: bold; }
+      #fivedayforecast div p span {
+        font-size: 1.2rem; }
     #fivedayforecast div img {
-      max-width: 100px;
+      max-width: 90px;
       width: 90%; }
 
 @media only screen and (min-width: 560px) {

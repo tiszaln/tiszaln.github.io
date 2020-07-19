@@ -112,18 +112,27 @@ main {
 
 /*Footer*/
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    color: $platinum;
-    max-width: 900px;
-    margin:8px auto;
-    border-top: 1px solid $platinum;
-    p {
-        display: inline;
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        color: $platinum;
+        max-width: 900px;
+        margin:8px auto;
+    
+        p {
+            display: inline;
 
-        i {
-            font-size: 20px;
+            i {
+                font-size: 20px;
+            }
         }
+    }
+    div:nth-child(1) {
+        border-top: 1px solid $platinum;
+    }
+    div:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -150,13 +159,17 @@ footer {
         width: 100%;
         margin: 5px auto;
         object-fit: cover;
-        opacity: 0.4;
+        opacity: 0.3;
     }
     div {
         text-align: center;
+        p {
+            font-size: 1.5rem;
+        }
         .button {
             width: 90%;
             margin: 10px auto;
+            font-size: 1rem;
         }
     }
 
@@ -172,11 +185,20 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border: 5px groove $cyanProcess;
+    padding: 10px;
     div {
         text-align: center;
         width:20%;
+        p {
+            margin: 0;
+            font-weight: bold;
+            span {
+                font-size: 1.2rem;
+            }
+        }
         img {
-            max-width: 100px;
+            max-width: 90px;
             width: 90%;
         }
     }

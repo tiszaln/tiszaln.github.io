@@ -14,7 +14,7 @@
     <title>Scoots Home Page</title>
 </head>
 
-<body onload="fiveDay()">
+<body onload="fiveDay(), copyYear()">
     <header>
         <a href="./index.html">
             <img src="./images/scooterLogo.svg" alt="Scoot's logo">
@@ -55,7 +55,7 @@
             <div>
                 <h3>Weather</h3>
                 <h4>Current</h4>
-                <p>Actual: <span id="temp"></span>&#8457;</p>
+                <p>Temperature: <span id="temp"></span>&#8457;</p>
                 <p>Condition: <span id="condition"></span></p>
                 <p>Humidity: <span id="humidity"></span>%</p>
                 <h4>5-Day Forecast</h4>
@@ -88,7 +88,11 @@
                 </div>
             </div>
             <div>
-                <h3>We are here...</h3>
+                <h3>Location Information</h3>
+                <p>Main phone #: +52 987 000 0000</p>
+                <p>Email: reservations@scoots.com</p>
+                <p>Address: </p>
+                <p>~For more details, visit our <a href="./contactUs.html">Contact Us</a> page~</p>
             </div>
         </section>
         <section>
@@ -96,12 +100,19 @@
         </section>
     </main>
     <footer>
-        <p>Follow Us!</p>
-        <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
-        <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
-        <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
-        <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
-        <p>Scoots Inc.</p>
+        <div>
+            <p>Follow Us!</p>
+            <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
+            <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
+            <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
+            <p>Scoots Inc.</p>
+        </div>
+        <div>
+            <p>&copy;<span id="copyright"></span> Daniel A. Olsen</p>
+            <p id="lastUpdate"></p>
+            <p><a href="./resources.html">Resources</a></p>
+        </div>
     </footer>
     <script src="./js/weather.js" onload="getWeather(3530103)"></script>
 </body>
