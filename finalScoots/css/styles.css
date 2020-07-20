@@ -413,6 +413,10 @@ footer div:nth-child(1) {
 footer div:nth-child(2) {
   flex-direction: column;
   text-align: center; }
+  footer div:nth-child(2) p {
+    margin: 3px; }
+  footer div:nth-child(2) p:nth-child(3) {
+    margin-bottom: 40px; }
 
 /*Buttons*/
 .button {
@@ -464,7 +468,7 @@ section h3 {
       max-width: 90px;
       width: 90%; }
 
-#localInfo div:nth-child(2) p:nth-child(8) {
+#localInfo div:nth-child(2) p:nth-child(7) {
   text-align: center; }
 #localInfo div:nth-child(2) img#locationPic {
   width: 100%; }
