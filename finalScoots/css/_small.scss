@@ -230,3 +230,21 @@ section {
         margin: 0;
     }
 }
+
+/*Rentals*/
+.pBreak {
+    white-space: pre;
+}
+
+.rentals section {
+    border: 2px solid $lightCoral;
+
+    p {
+        margin: 10px;
+    }
+
+    img {
+        display: block;
+        width: 98%;
+    }
+}

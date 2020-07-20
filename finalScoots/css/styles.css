@@ -481,6 +481,18 @@ section h3 {
     text-align: left;
     margin: 0; }
 
+/*Rentals*/
+.pBreak {
+  white-space: pre; }
+
+.rentals section {
+  border: 2px solid #EF6F6C; }
+  .rentals section p {
+    margin: 10px; }
+  .rentals section img {
+    display: block;
+    width: 98%; }
+
 @media only screen and (min-width: 560px) {
   /*Header*/
   header img {
@@ -505,7 +517,16 @@ section h3 {
     #localInfo h2 {
       grid-column: span 2; }
     #localInfo div:nth-child(2) {
-      margin-right: 10px; } }
+      margin-right: 10px; }
+
+  /*Rentals*/
+  .rentals section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .rentals section div {
+      padding-left: 20%; }
+    .rentals section img {
+      margin: 10px auto; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /*Navigation*/
@@ -516,5 +537,14 @@ section h3 {
     display: none; }
 
   .hide {
-    display: block; } }
+    display: block; }
+
+  /*Rentals*/
+  .rentals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .rentals section {
+      display: block; }
+      .rentals section div {
+        padding-left: 0; } }
 /* end of media query */

@@ -12,3 +12,17 @@ nav {
 .hide {
     display: block;
 }
+
+/*Rentals*/ 
+.rentals {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    section {
+        display: block;
+        div {
+            padding-left: 0;
+        }
+        
+    
+    }
+}

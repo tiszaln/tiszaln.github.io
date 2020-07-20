@@ -39,3 +39,15 @@ nav {
     }
     
 }
+
+/*Rentals*/ 
+.rentals section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        padding-left: 20%;
+    }
+    img {
+        margin: 10px auto;
+    }
+}
