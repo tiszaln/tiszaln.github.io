@@ -464,8 +464,16 @@ section h3 {
       max-width: 90px;
       width: 90%; }
 
-#localInfo div:nth-child(2) p:nth-child(5) {
+#localInfo div:nth-child(2) p:nth-child(8) {
   text-align: center; }
+#localInfo div:nth-child(2) img#locationPic {
+  width: 100%; }
+
+#summary {
+  text-align: center; }
+  #summary ul {
+    text-align: left;
+    margin: 0; }
 
 @media only screen and (min-width: 560px) {
   /*Header*/
