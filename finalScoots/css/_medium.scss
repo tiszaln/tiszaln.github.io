@@ -15,10 +15,23 @@ nav {
 
 /*Home Page*/
 #callToAction{
+    img {
+        opacity: 0.3;
+    }
     div {
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+#localInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div:nth-child(1) {
+        margin-right: 10px;
+    }
+    
 }

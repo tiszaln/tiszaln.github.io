@@ -159,7 +159,6 @@ footer {
         width: 100%;
         margin: 5px auto;
         object-fit: cover;
-        opacity: 0.3;
     }
     div {
         text-align: center;
@@ -200,6 +199,14 @@ section {
         img {
             max-width: 90px;
             width: 90%;
+        }
+    }
+}
+
+#localInfo {
+    div:nth-child(2) {
+        p:nth-child(5) {
+            text-align: center;
         }
     }
 }

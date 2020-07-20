@@ -433,8 +433,7 @@ footer div:nth-child(2) {
     max-width: 900px;
     width: 100%;
     margin: 5px auto;
-    object-fit: cover;
-    opacity: 0.3; }
+    object-fit: cover; }
   #callToAction div {
     text-align: center; }
     #callToAction div p {
@@ -465,6 +464,9 @@ section h3 {
       max-width: 90px;
       width: 90%; }
 
+#localInfo div:nth-child(2) p:nth-child(5) {
+  text-align: center; }
+
 @media only screen and (min-width: 560px) {
   /*Header*/
   header img {
@@ -475,11 +477,19 @@ section h3 {
     margin: 10px; }
 
   /*Home Page*/
+  #callToAction img {
+    opacity: 0.3; }
   #callToAction div {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+
+  #localInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #localInfo div:nth-child(1) {
+      margin-right: 10px; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /*Navigation*/
