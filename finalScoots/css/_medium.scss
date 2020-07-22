@@ -1,0 +1,53 @@
+/*Header*/
+header {
+    img {
+        width:10%;
+    }
+}
+
+/*Navigation*/
+nav {
+    button {
+        margin: 10px;
+    }
+}
+
+
+/*Home Page*/
+#callToAction{
+    img {
+        opacity: 0.3;
+    }
+    div {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#localInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h2 {
+        grid-column: span 2;
+    }
+
+    div:nth-child(2) {
+        margin-right: 10px;
+    }
+    
+}
+
+/*Rentals*/ 
+.rentals section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        padding-left: 20%;
+    }
+    img {
+        margin: 10px auto;
+    }
+}

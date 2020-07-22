@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots' resources for island rentals and adventures">
+    <meta name="author" content="Daniel Olsen">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/scooterLogo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/792d9b284b.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/date.js"> </script>
+
+    <title>Scoots | Website Resources</title>
+</head>
+
+<body onload="copyYear()">
+    <header>
+        <a href="./index.html">
+            <img src="./images/scooterLogo.svg" alt="Scoot's logo">
+            <h1>Scoots</h1>
+        </a>
+    </header>
+    <nav>
+        <button onclick="responsiveMenu()" id="hamburger">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="./index.html"><h3>Home</h3></a>
+            </li>
+            <li>
+                <a href="./rentals.html"><h3>Rentals</h3></a>
+            </li>
+            <li>
+                <a href="./reservations.html"><h3>Reservations</h3></a>
+            </li>
+            <li>
+                <a href="./tours.html"><h3>Tours</h3></a>
+            </li>
+            <li>
+                <a href="./contactUs.html"><h3>Contact Us</h3></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Resources</h2>
+            <ul>
+                <li>OpenWeatherMap API
+                    <ul>
+                        <li>Live data and weather icons for home page forecasts.
+                            <ul>
+                                <li><a href="https://openweathermap.org/">https://openweathermap.org/</a></li>
+                            </ul>
+                        </li>
+                        <br>
+                    </ul>
+                </li>
+
+                <li>Font Awesome
+                    <ul>
+                        <li>For social media icons in the footer.
+                            <ul>
+                                <li><a href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+                            </ul>
+                        </li>
+                        <br>
+                    </ul>
+                </li>
+                <li>Unsplash
+                    <ul>
+                        <li><span>Photo by <a href="https://unsplash.com/@dav_billings?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Billings</a> on <a href="https://unsplash.com/s/photos/scooter-beach?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> | Home Page > Call to action</li>
+                        <li><span>Photo by <a href="https://unsplash.com/@seemoris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Caleb George</a> on <a href="https://unsplash.com/s/photos/cozumel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> | Home Page > Location Information</li>
+                        <br>
+                    </ul>
+                </li>
+                <li>Honda & Jeep
+                    <ul>
+                        <li>Images for the Rentals page inventory.
+                            <ul>
+                                <li><a href="https://powersports.honda.com/street/scooter/metropolitan">https://powersports.honda.com/street/scooter/metropolitan</a></li>
+                                <li><a href="https://www.jeep.com/wrangler.html">https://www.jeep.com/wrangler.html</a></li>
+                            </ul>
+                        </li>
+                        <br>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Follow Us!</p>
+            <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
+            <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
+            <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
+            <p>Scoots Inc.</p>
+        </div>
+        <div>
+            <p>&copy;<span id="copyright"></span> Daniel A. Olsen</p>
+            <p id="lastUpdate"></p>
+            <p><a href="./resources.html">Resources</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

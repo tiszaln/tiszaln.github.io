@@ -1,0 +1,299 @@
+/*General*/
+body {
+    background-color: $raisinBlack;
+    font-family: $context;
+    color: $pinkSherbet;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header;
+    color: $lightCoral;
+    letter-spacing: 2px;
+}
+
+a:link {
+    text-decoration: none;
+    color: $lightCoral;
+}
+
+a:visited {
+    color: $cyanProcess;
+}
+
+/*Header*/
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+    img {
+        width: 20%;
+        float: right;
+    }
+}
+
+/*Navigation*/
+nav {
+    clear: both;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid $platinum;
+    ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 5px solid transparent;
+    }
+    li {
+        list-style: none;
+    }
+    button {
+        display: block;
+        color: $lightCoral;
+        margin: 10px;
+        text-align: center;
+        padding: 1em 1.1em;
+        background-color: $raisinBlack;
+        border-radius: 30%;
+        border: 1px solid $lightCoral;
+    }
+}
+
+.showMenu {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+a h3 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+a h3:link {
+    text-decoration: none;
+}
+
+a h3:visited {
+    color: $cyanProcess;
+}
+
+a h3:hover {
+    background-color: $lightCoral;
+    color: $raisinBlack;
+    animation-name: navi;
+    animation-duration: 0.4s;
+}
+
+#current {
+    background-color: $platinum;
+    color: $raisinBlack;
+    text-decoration: 3px underline;
+}
+
+@keyframes navi {
+    from {background-color:$raisinBlack;}
+    to {background-color: $lightCoral;}
+  }
+
+/*Main*/
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    section {
+        margin: 10px;
+    }
+}
+
+/*Footer*/
+footer {
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        color: $platinum;
+        max-width: 900px;
+        margin:8px auto;
+    
+        p {
+            display: inline;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+    div:nth-child(1) {
+        border-top: 1px solid $platinum;
+    }
+    div:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+        p {
+            margin: 3px;
+        }
+        p:nth-child(3) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/*Buttons*/
+.button {
+    border: 2px solid $lightCoral;
+    border-radius: 8px;
+    background-color: $lightCoral;
+    color: $platinum;
+    padding: 10px 5px;
+
+}
+
+.button:hover {
+    background-color: $platinum;
+    color: $lightCoral;
+}
+
+/*Home Page*/
+#callToAction{
+    position: relative;
+    img {
+        max-width: 900px;
+        width: 100%;
+        margin: 5px auto;
+        object-fit: cover;
+    }
+    div {
+        text-align: center;
+        p {
+            font-size: 1.5rem;
+        }
+        .button {
+            width: 90%;
+            margin: 10px auto;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+section {
+    h3 {
+        text-align: center;
+    }
+}
+
+#fivedayforecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 5px groove $cyanProcess;
+    padding: 10px;
+    div {
+        text-align: center;
+        width:20%;
+        p {
+            margin: 0;
+            font-weight: bold;
+            span {
+                font-size: 1.2rem;
+            }
+        }
+        img {
+            max-width: 90px;
+            width: 90%;
+        }
+    }
+}
+
+#localInfo {
+    h2 {
+        text-align: center;
+    }
+    div:nth-child(3) {
+        p:nth-child(7) {
+            text-align: center;
+        }
+        img#locationPic {
+            width: 100%;
+        }
+    }
+}
+
+#summary {
+    text-align: center;
+    ul {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+/*Rentals*/
+.pBreak {
+    white-space: pre;
+}
+
+.rentals section {
+    border: 2px solid $lightCoral;
+
+    p {
+        margin: 10px;
+    }
+
+    img {
+        display: block;
+        width: 98%;
+    }
+}
+
+/*Reservations*/
+form {
+    fieldset {
+        border: 2px solid $platinum;
+        h2 {
+            padding: 0 5px;
+        }
+        label, select {
+            display: block;
+            margin: 0 10px 10px;
+        }
+        input.top, select {
+            display: block;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+        select {
+            background-color: white;
+            height: 40px;
+        }
+        textarea {
+            display: block;
+        }
+        #rentalDate {
+            height: 30px;
+            width: 150px;
+            padding-top: 20px;
+        }
+    }
+    .button {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
+/*Confirmation*/
+#confirmation {
+    text-align: center;
+    height: 30vh;
+    margin-top: 20%;
+}
+
+/*Contact Us*/ 
+#map {
+    height: 400px;
+  }
+  

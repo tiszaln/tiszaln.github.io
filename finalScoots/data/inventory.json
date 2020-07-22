@@ -1,0 +1,87 @@
+{
+    "rentals": [{
+            "type": "Honda Metro Scooter",
+            "maxPersons": 1,
+            "img": "./images/hondaMetro.webp",
+            "reservations": [{
+                "halfDay": "$20",
+                "fullDay": "$30"
+            }],
+            "walkIn": [{
+                "halfDay": "$25",
+                "fullDay": "$35"
+            }]
+
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "maxPersons": 2,
+            "img": "./images/hondaDio.webp",
+            "reservations": [{
+                "halfDay": "$30",
+                "fullDay": "$40"
+            }],
+            "walkIn": [{
+                "halfDay": "$35",
+                "fullDay": "$45"
+            }]
+
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "maxPersons": 2,
+            "img": "./images/hondaPCX150.webp",
+            "reservations": [{
+                "halfDay": "$40",
+                "fullDay": "$50"
+            }],
+            "walkIn": [{
+                "halfDay": "$45",
+                "fullDay": "$55"
+            }]
+
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "maxPersons": 4,
+            "img": "./images/hondaPioneer.webp",
+            "reservations": [{
+                "halfDay": "$50",
+                "fullDay": "$70"
+            }],
+            "walkIn": [{
+                "halfDay": "$60",
+                "fullDay": "$80"
+            }]
+
+        },
+        {
+            "type": "Jeep Wrangler - 4door with A/C",
+            "maxPersons": 5,
+            "img": "./images/jeep4Door.webp",
+            "reservations": [{
+                "halfDay": "$70",
+                "fullDay": "$100"
+            }],
+            "walkIn": [{
+                "halfDay": "$85",
+                "fullDay": "$125"
+            }]
+
+        },
+        {
+            "type": "Jeep Wrangler - 2door",
+            "maxPersons": 4,
+            "img": "./images/jeep2Door.webp",
+            "reservations": [{
+                "halfDay": "$60",
+                "fullDay": "$85"
+            }],
+            "walkIn": [{
+                "halfDay": "$70",
+                "fullDay": "$90"
+            }]
+
+        }
+    ]
+}

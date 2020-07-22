@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots' home page for island rentals and adventures">
+    <meta name="author" content="Daniel Olsen">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/scooterLogo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/792d9b284b.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/date.js"></script>
+
+    <title>Scoots | Home Page</title>
+</head>
+
+<body onload="fiveDay(), copyYear()">
+    <header>
+        <a href="./index.html">
+            <img src="./images/scooterLogo.svg" alt="Scoot's logo">
+            <h1>Scoots</h1>
+        </a>
+    </header>
+    <nav>
+        <button onclick="responsiveMenu()" id="hamburger">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="#"><h3 id="current">Home</h3></a>
+            </li>
+            <li>
+                <a href="./rentals.html"><h3>Rentals</h3></a>
+            </li>
+            <li>
+                <a href="./reservations.html"><h3>Reservations</h3></a>
+            </li>
+            <li>
+                <a href="./tours.html"><h3>Tours</h3></a>
+            </li>
+            <li>
+                <a href="./contactUs.html"><h3>Contact Us</h3></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="callToAction">
+            <img src="./images/ScooterBeach.webp" alt="Sunset with scooter on the beach">
+            <div>
+                <h2>Visit one of our locations!</h2>
+                <p>Start your rental, it's only a click away...</p>
+                <a href="./reservations.html"><p class="button">Playa del Carmen-Cozumel Ferry Dock</p></a>
+                <a href="./reservations.html"><p class="button">Terminal Puerta Maya</p></a>
+            </div>
+        </section>
+        <section id="localInfo">
+            <h2>On the island</h2>
+            <div>
+                <h3>Weather</h3>
+                <h4>Current</h4>
+                <p>Temperature: <span id="temp"></span>&#8457;</p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <h4>5-Day Forecast</h4>
+                <div id="fivedayforecast">
+                    <div>
+                        <p id="day0"></p>
+                        <img id="5dayicon0" src="#" alt="">
+                        <p><span id="5day0"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day1"></p>
+                        <img id="5dayicon1" src="#" alt="">
+                        <p><span id="5day1"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day2"></p>
+                        <img id="5dayicon2" src="#" alt="">
+                        <p><span id="5day2"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day3"></p>
+                        <img id="5dayicon3" src="#" alt="">
+                        <p><span id="5day3"></span>&#8457;</p>
+                    </div>
+                    <div>
+                        <p id="day4"></p>
+                        <img id="5dayicon4" src="#" alt="">
+                        <p><span id="5day4"></span>&#8457;</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Location Information</h3>
+                <h4>Store</h4>
+                <p>Main phone #: +52 987 000 0000</p>
+                <p>Email: reservations@scoots.com</p>
+                <p>Address: 1234 Fake St., Cozumel, Mexico</p>
+                <img id="locationPic" src="./images/jeepBeach.webp" alt="Jeep on the beach">
+                <p>~For more details, visit our <a href="./contactUs.html">Contact Us</a> page~</p>
+            </div>
+        </section>
+        <section id="summary">
+            <h2>What you can expect from Scoots:</h2>
+            <p>Have fun on scooters, ATVs and Jeeps</p>
+            <p>Information and Services</p>
+            <ul>
+                <li>
+                    A $50 security deposit is required to confirm reservations.
+                </li>
+                <li>
+                    A valid drivers license is required in hand at time of rental.
+                </li>
+                <li>
+                    No one under 12 years of age are allowed to ride on the scooters.
+                </li>
+                <li>
+                    Fuel charge not included.
+                </li>
+                <li>
+                    Unlimited mileage.
+                </li>
+                <li>
+                    Liability insurance is free of charge.
+                </li>
+                <li>
+                    Reservations rate requires 24 hour prior notification.
+                </li>
+                <li>
+                    Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                </li>
+                <li>
+                    Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                </li>
+                <li>
+                    Rentals may be returned to either location.
+                </li>
+            </ul>
+            <p>
+                ~Additional information can be found on our <a href="./rentals.html">rental</a> page.~
+            </p>
+            
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Follow Us!</p>
+            <p><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></p>
+            <p><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></p>
+            <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></p>
+            <p>Scoots Inc.</p>
+        </div>
+        <div>
+            <p>&copy;<span id="copyright"></span> Daniel A. Olsen</p>
+            <p id="lastUpdate"></p>
+            <p><a href="./resources.html">Resources</a></p>
+        </div>
+    </footer>
+    <script src="./js/weather.js" onload="getWeather(3530103)"></script>
+</body>
+
+</html>
