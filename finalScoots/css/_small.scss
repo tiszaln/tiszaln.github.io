@@ -93,7 +93,7 @@ a h3:hover {
 #current {
     background-color: $platinum;
     color: $raisinBlack;
-    text-decoration: underline 3px;
+    text-decoration: solid underline $raisinBlack 3px;
 }
 
 @keyframes navi {
@@ -147,14 +147,14 @@ footer {
     border: 2px solid $lightCoral;
     border-radius: 8px;
     background-color: $lightCoral;
-    color: $platinum;
+    color: $raisinBlack;
     padding: 10px 5px;
     font-weight: bold;
 
 }
 
 .button:hover {
-    background-color: $platinum;
+    background-color: $raisinBlack;
     color: $lightCoral;
 }
 
@@ -298,4 +298,10 @@ form {
 #map {
     height: 400px;
   }
+
+#contact {
+    img#locationPic {
+        width: 100%;
+    }
+}
   

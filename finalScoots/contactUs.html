@@ -48,9 +48,30 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="contact">
         <section>
             <h2>Contact Us</h2>
+            <h4>Store</h4>
+                <p>Main phone #: +52 987 000 0000</p>
+                <p>Email: reservations@scoots.com</p>
+                <p>Address: 1234 Fake St., Cozumel, Mexico</p>
+                <img id="locationPic" src="./images/jeepBeach.webp" alt="Jeep on the beach">
+        </section>
+        <section>
+            <form action="./tours.html" method="get">
+                <fieldset>
+                    <legend>
+                        <h2>Contact Form</h2>
+                    </legend>
+                    <label for="fullName" >Full Name: <input class="top" type="text" name="fullName" id="fullName"
+                        pattern="[a-zA-Z\s\-\.]{3,}" required></label>
+                    <label for="email" >Email: <input class="top" type="email" name="email" id="email"
+                            placeholder="you@gmail.com" required></label>
+                    <label for="comments">Comments: <textarea name="comments" id="comments" cols="30"
+                        rows="10" required></textarea></label>
+                </fieldset>
+                <input class="button" id="send" type="submit" value="Share Contact Details">
+            </form>
         </section>
         <section>
             <h3>Locations</h3>
