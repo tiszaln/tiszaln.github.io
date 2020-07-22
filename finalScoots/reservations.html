@@ -48,23 +48,23 @@
             <form action="./confirmation.html" method="get">
                 <fieldset>
                     <legend>
-                        <h2>Contact Information</h2>
+                        <h2>Rental Information</h2>
                     </legend>
-                    <label for="rentalDate" class="">Rental Date: <input type="date" name="rentalDate" id="rentalDate"></label>
-                    <label for="fullName" class="top">Full Name: <input type="text" name="fullName" id="fullName"
+                    <label for="rentalDate" >Rental Date: <input type="date" name="rentalDate" id="rentalDate"></label>
+                    <label for="fullName" >Full Name: <input type="text" name="fullName" id="fullName"
                             pattern="[a-zA-Z\s\-\.]{3,}" required></label>
-                    <label for="email" class="top">Email: <input type="email" name="email" id="email"
+                    <label for="email" >Email: <input type="email" name="email" id="email"
                             placeholder="you@gmail.com"></label>
-                    <label for="phone" class="top">Phone: <input type="tel" name="phone" id="phone" required></label>
-                    <label for="zip" class="top">Zip Code: <input type="number" name="zip" id="zip" required></label>
+                    <label for="phone" >Phone: <input type="tel" name="phone" id="phone" required></label>
+                    <label for="zip" >Zip Code: <input type="number" name="zip" id="zip" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>
                         <h2>Storm Details</h2>
                     </legend>
-                    <label for="stormDate" class="top">Storm Date: <input type="date" name="stormDate"
+                    <label for="stormDate" >Storm Date: <input type="date" name="stormDate"
                             id="stormDate"></label>
-                    <label for="wType" class="top">Storm Type: <input list="stormType" id="wType"></label>
+                    <label for="wType" >Storm Type: <input list="stormType" id="wType"></label>
                     <datalist id="stormType">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
@@ -72,13 +72,13 @@
                         <option value="Thunder Storm"></option>
                         <option value="Tornado"></option>
                     </datalist>
-                    <label class="top" for="stormSev">Storm Severity:</label>
+                    <label  for="stormSev">Storm Severity:</label>
                     <input type="range" name="stormSev" id="stormSev"
                                 value="0" min="0" max="10" oninput="stormSeverity(this.value)"
                                 onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span>
                         
-                    <label for="stormRegion" class="top">Storm Region: </label>
-                    <select name="stormRegion" id="stormRegion" class="top">
+                    <label for="stormRegion" >Storm Region: </label>
+                    <select name="stormRegion" id="stormRegion" >
                         <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
                         <option value="preston">Preston</option>
                         <option value="soda springs">Soda Springs</option>
@@ -89,17 +89,50 @@
                     <legend>
                         <h2>Additional Information</h2>
                     </legend>
-                    <label class="top">User in-danger level: </label>
+                    <label >User in-danger level: </label>
                     <label for="yes" class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
                     <label for="maybe" class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
                     <label for="no" class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
                     <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30"
                             rows="10"></textarea></label>
                 </fieldset>
-                <input id="send" type="submit" value="Share Storm Details">
+                <input class="button" id="send" type="submit" value="Confirm Reservation">
             </form>
         </section>
         <section>
+            <p>Information and Services</p>
+            <ul>
+                <li>
+                    A $50 security deposit is required to confirm reservations.
+                </li>
+                <li>
+                    A valid drivers license is required in hand at time of rental.
+                </li>
+                <li>
+                    No one under 12 years of age are allowed to ride on the scooters.
+                </li>
+                <li>
+                    Fuel charge not included.
+                </li>
+                <li>
+                    Unlimited mileage.
+                </li>
+                <li>
+                    Liability insurance is free of charge.
+                </li>
+                <li>
+                    Reservations rate requires 24 hour prior notification.
+                </li>
+                <li>
+                    Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                </li>
+                <li>
+                    Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                </li>
+                <li>
+                    Rentals may be returned to either location.
+                </li>
+            </ul>
         </section>
     </main>
     <footer>

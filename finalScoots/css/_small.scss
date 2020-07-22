@@ -248,3 +248,34 @@ section {
         width: 98%;
     }
 }
+
+/*Reservations*/
+form {
+    fieldset {
+        border: 2px solid $platinum;
+        h2 {
+            padding: 0 5px;
+        }
+        label {
+            display: block;
+            margin: 0 10px 10px;
+        }
+        input, select {
+            display: block;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+    }
+    .button {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
+/*Confirmation*/
+#confirmation {
+    text-align: center;
+    height: 30vh;
+    margin-top: 20%;
+}
