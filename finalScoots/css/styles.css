@@ -383,7 +383,7 @@ a h3:hover {
 #current {
   background-color: #E5E5E5;
   color: #231F20;
-  text-decoration: 3px underline; }
+  text-decoration: underline 3px; }
 
 @keyframes navi {
   from {
@@ -424,7 +424,8 @@ footer div:nth-child(2) {
   border-radius: 8px;
   background-color: #EF6F6C;
   color: #E5E5E5;
-  padding: 10px 5px; }
+  padding: 10px 5px;
+  font-weight: bold; }
 
 .button:hover {
   background-color: #E5E5E5;
@@ -507,7 +508,8 @@ form fieldset {
     -webkit-appearance: none; }
   form fieldset select {
     background-color: white;
-    height: 40px; }
+    height: 40px;
+    margin-top: 0; }
   form fieldset textarea {
     display: block; }
   form fieldset #rentalDate {
