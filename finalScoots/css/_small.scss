@@ -256,14 +256,26 @@ form {
         h2 {
             padding: 0 5px;
         }
-        label {
+        label, select {
             display: block;
             margin: 0 10px 10px;
         }
-        input, select {
+        input.top, select {
             display: block;
             -moz-appearance: none;
             -webkit-appearance: none;
+        }
+        select {
+            background-color: white;
+            height: 40px;
+        }
+        textarea {
+            display: block;
+        }
+        #rentalDate {
+            height: 30px;
+            width: 150px;
+            padding-top: 20px;
         }
     }
     .button {
@@ -279,3 +291,9 @@ form {
     height: 30vh;
     margin-top: 20%;
 }
+
+/*Contact Us*/ 
+#map {
+    height: 400px;
+  }
+  

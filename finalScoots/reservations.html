@@ -50,51 +50,36 @@
                     <legend>
                         <h2>Rental Information</h2>
                     </legend>
-                    <label for="rentalDate" >Rental Date: <input type="date" name="rentalDate" id="rentalDate"></label>
-                    <label for="fullName" >Full Name: <input type="text" name="fullName" id="fullName"
-                            pattern="[a-zA-Z\s\-\.]{3,}" required></label>
-                    <label for="email" >Email: <input type="email" name="email" id="email"
-                            placeholder="you@gmail.com"></label>
-                    <label for="phone" >Phone: <input type="tel" name="phone" id="phone" required></label>
-                    <label for="zip" >Zip Code: <input type="number" name="zip" id="zip" required></label>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        <h2>Storm Details</h2>
-                    </legend>
-                    <label for="stormDate" >Storm Date: <input type="date" name="stormDate"
-                            id="stormDate"></label>
-                    <label for="wType" >Storm Type: <input list="stormType" id="wType"></label>
-                    <datalist id="stormType">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunder Storm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                    <label  for="stormSev">Storm Severity:</label>
-                    <input type="range" name="stormSev" id="stormSev"
-                                value="0" min="0" max="10" oninput="stormSeverity(this.value)"
-                                onchange="stormSeverity(this.value)">&nbsp;&nbsp;<span id="stormSevValue">0</span>
-                        
-                    <label for="stormRegion" >Storm Region: </label>
-                    <select name="stormRegion" id="stormRegion" >
-                        <option value="" disabled selected>&nbsp; Select Region &#9662;&nbsp;</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda springs">Soda Springs</option>
-                        <option value="fish haven">Fish Haven</option>
+                    <label for="rentalDate" >Rental Date: <input class="top" type="date" name="rentalDate" id="rentalDate"></label>
+                    <select name="rentalType" id="rentalType" >
+                        <option value="" disabled selected>&nbsp; Select Rental Vehicle &#9662;&nbsp;</option>
+                    </select>
+                    <select name="rentalLength" id="rentalLength" >
+                        <option value="" disabled selected>&nbsp; Select Rental Length &#9662;&nbsp;</option>
+                        <option value="half-day">Half-Day</option>
+                        <option value="full-day">Full-Day</option>
+                    </select>
+                    <label for="totalDays" >Total Days: <input class="top" type="number" name="totalDays" id="totalDays" placeholder="Number of Days"></label>
+                    <select name="rentalLocation" id="rentalLocation" >
+                        <option value="" disabled selected>&nbsp; Select Rental Location &#9662;&nbsp;</option>
+                        <option value="playa">Playa del Carmen-Cozumel Ferry dock</option>
+                        <option value="puerta">Terminal Puerta Maya</option>
                     </select>
                 </fieldset>
                 <fieldset>
                     <legend>
-                        <h2>Additional Information</h2>
+                        <h2>Renter Details</h2>
                     </legend>
-                    <label >User in-danger level: </label>
-                    <label for="yes" class="radio"><input type="radio" name="dangerLevel" id="yes"> Yes</label>
-                    <label for="maybe" class="radio"><input type="radio" name="dangerLevel" id="maybe"> Maybe</label>
-                    <label for="no" class="radio"><input type="radio" name="dangerLevel" id="no"> No</label>
-                    <label for="comments">Additional comments: <textarea name="comments" id="comments" cols="30"
-                            rows="10"></textarea></label>
+                    <label for="fullName" >Full Name: <input class="top" type="text" name="fullName" id="fullName"
+                        pattern="[a-zA-Z\s\-\.]{3,}" required></label>
+                    <label for="email" >Email: <input class="top" type="email" name="email" id="email"
+                            placeholder="you@gmail.com"></label>
+                    <label for="phone" >Phone: <input class="top" type="tel" name="phone" id="phone" required></label>
+                    <label for="country" >Country: <input class="top" type="text" name="country" id="country" required></label>
+                    <label for="zip" >Zip Code: <input class="top" type="number" name="zip" id="zip" required></label>
+                    <label for="cruise" >Cruise line, if applicable: <input class="top" type="text" name="cruise" id="cruise"></label>
+                    <label for="comments">Special accommodations / comments: <textarea name="comments" id="comments" cols="30"
+                        rows="10"></textarea></label>
                 </fieldset>
                 <input class="button" id="send" type="submit" value="Confirm Reservation">
             </form>
@@ -150,6 +135,8 @@
             <p><a href="./resources.html">Resources</a></p>
         </div>
     </footer>
+    <script src="./js/reservation.js"></script>
+
 </body>
 
 </html>

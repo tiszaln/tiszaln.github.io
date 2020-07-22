@@ -498,13 +498,22 @@ form fieldset {
   border: 2px solid #E5E5E5; }
   form fieldset h2 {
     padding: 0 5px; }
-  form fieldset label {
+  form fieldset label, form fieldset select {
     display: block;
     margin: 0 10px 10px; }
-  form fieldset input, form fieldset select {
+  form fieldset input.top, form fieldset select {
     display: block;
     -moz-appearance: none;
     -webkit-appearance: none; }
+  form fieldset select {
+    background-color: white;
+    height: 40px; }
+  form fieldset textarea {
+    display: block; }
+  form fieldset #rentalDate {
+    height: 30px;
+    width: 150px;
+    padding-top: 20px; }
 form .button {
   display: block;
   margin: 10px auto; }
@@ -514,6 +523,10 @@ form .button {
   text-align: center;
   height: 30vh;
   margin-top: 20%; }
+
+/*Contact Us*/
+#map {
+  height: 400px; }
 
 @media only screen and (min-width: 560px) {
   /*Header*/
@@ -568,5 +581,10 @@ form .button {
     .rentals section {
       display: block; }
       .rentals section div {
-        padding-left: 0; } }
+        padding-left: 0; }
+
+  /*Reservation*/
+  form fieldset #rentalDate {
+    height: 20px;
+    padding-top: 0; } }
 /* end of media query */
