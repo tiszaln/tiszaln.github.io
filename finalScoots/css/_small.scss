@@ -93,7 +93,8 @@ a h3:hover {
 #current {
     background-color: $platinum;
     color: $raisinBlack;
-    text-decoration: solid underline $raisinBlack 3px;
+    text-decoration: solid underline $raisinBlack;
+    text-decoration-thickness: 3px;
 }
 
 @keyframes navi {
@@ -238,7 +239,7 @@ section {
 }
 
 .rentals section {
-    border: 2px solid $lightCoral;
+    border: 2px solid $platinum;
 
     p {
         margin: 10px;
@@ -273,6 +274,7 @@ form {
         }
         textarea {
             display: block;
+            width: 95%;
         }
         #rentalDate {
             height: 30px;
@@ -296,7 +298,7 @@ form {
 
 /*Tours*/ 
 .tour {
-    border: 2px solid $lightCoral;
+    border: 2px solid $platinum;
     border-radius: 2px;
     text-align: center;
     margin: 0 0 10px;

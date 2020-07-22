@@ -383,7 +383,8 @@ a h3:hover {
 #current {
   background-color: #E5E5E5;
   color: #231F20;
-  text-decoration: solid underline #231F20 3px; }
+  text-decoration: solid underline #231F20;
+  text-decoration-thickness: 3px; }
 
 @keyframes navi {
   from {
@@ -487,7 +488,7 @@ section h3 {
   white-space: pre; }
 
 .rentals section {
-  border: 2px solid #EF6F6C; }
+  border: 2px solid #E5E5E5; }
   .rentals section p {
     margin: 10px; }
   .rentals section img {
@@ -511,7 +512,8 @@ form fieldset {
     height: 40px;
     margin-top: 0; }
   form fieldset textarea {
-    display: block; }
+    display: block;
+    width: 95%; }
   form fieldset #rentalDate {
     height: 30px;
     width: 150px;
@@ -528,7 +530,7 @@ form .button {
 
 /*Tours*/
 .tour {
-  border: 2px solid #EF6F6C;
+  border: 2px solid #E5E5E5;
   border-radius: 2px;
   text-align: center;
   margin: 0 0 10px; }
