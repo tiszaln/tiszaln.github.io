@@ -294,6 +294,31 @@ form {
     margin-top: 20%;
 }
 
+/*Tours*/ 
+.tour {
+    border: 2px solid $lightCoral;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 0 10px;
+    h4 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 3px;
+    }
+    img {
+        width: 95%;
+    }
+}
+#history {
+    p {
+        font-size: 1.3rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+
 /*Contact Us*/ 
 #map {
     height: 400px;
