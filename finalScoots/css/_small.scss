@@ -93,7 +93,7 @@ a h3:hover {
 #current {
     background-color: $platinum;
     color: $raisinBlack;
-    text-decoration: 3px underline;
+    text-decoration: underline 3px;
 }
 
 @keyframes navi {
@@ -149,6 +149,7 @@ footer {
     background-color: $lightCoral;
     color: $platinum;
     padding: 10px 5px;
+    font-weight: bold;
 
 }
 
@@ -268,6 +269,7 @@ form {
         select {
             background-color: white;
             height: 40px;
+            margin-top: 0;
         }
         textarea {
             display: block;
