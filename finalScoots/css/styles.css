@@ -526,6 +526,24 @@ form .button {
   height: 30vh;
   margin-top: 20%; }
 
+/*Tours*/
+.tour {
+  border: 2px solid #EF6F6C;
+  border-radius: 2px;
+  text-align: center;
+  margin: 0 0 10px; }
+  .tour h4 {
+    margin-bottom: 0; }
+  .tour p {
+    margin-top: 3px; }
+  .tour img {
+    width: 95%; }
+
+#history p {
+  font-size: 1.3rem; }
+#history img {
+  width: 100%; }
+
 /*Contact Us*/
 #map {
   height: 400px; }
@@ -541,6 +559,10 @@ form .button {
   /*Navigation*/
   nav button {
     margin: 10px; }
+
+  /*Footer*/
+  footer {
+    clear: right; }
 
   /*Home Page*/
   #callToAction img {
@@ -567,6 +589,18 @@ form .button {
       padding-left: 20%; }
     .rentals section img {
       margin: 10px auto; }
+
+  /*Tours*/
+  #activities {
+    display: flex;
+    justify-content: space-evenly; }
+    #activities .tour {
+      width: 30%; }
+
+  #history img {
+    float: right;
+    width: 30%;
+    margin: 5px; }
 
   /*Contact Us*/
   #contact {
