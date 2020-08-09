@@ -1,11 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    color: white;
+}
+h1, h2, h3 {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+
+a:link {
+    color: lightcoral;
+}
+a:visited {
+    font-style: italic;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
 header {
-    background: hsla(192, 80%, 51%, 1);
+    background: hsla(355, 85%, 63%, 1);
+    margin: 0;
+    padding: 30px;
+    max-width: 100%;
+}
 
-    background: linear-gradient(45deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+header h1 {
+    text-align: center;
+    
+}
 
-    background: -moz-linear-gradient(45deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+body section {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: hsla(355, 85%, 63%, 1);
+    padding: 10px;
+}
 
-    background: -webkit-linear-gradient(45deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+section p {
+    position: relative;
+    text-align: center;
+}
 
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1DBDE6", endColorstr="#F1515E", GradientType=1);
+footer {
+    margin: 10px;
+    text-align: center;
+}
+
+/* ID's */
+#listInit {
+    margin-left: 10px;
 }
