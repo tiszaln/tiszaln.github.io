@@ -17,7 +17,7 @@ h3 {
 
 
 a:link {
-    color: lightcoral;
+    color: white;
 }
 
 a:visited {
@@ -27,7 +27,7 @@ a:visited {
 
 h2 {
     color: hsla(355, 85%, 63%, 1);
-    text-align: right;
+    text-align: center;
     margin-right: 3px;
 }
 
@@ -82,6 +82,10 @@ footer {
     background-color: rgb(221, 83, 95);
     max-width: 20rem;
 
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (min-width: 900px) {
