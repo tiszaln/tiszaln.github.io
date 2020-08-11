@@ -5,9 +5,13 @@ body {
     margin: 0;
     color: white;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'Exo', sans-serif;
     margin: 0;
+    padding: 0;
     color: white;
 }
 
@@ -15,16 +19,23 @@ h1, h2, h3 {
 a:link {
     color: lightcoral;
 }
+
 a:visited {
     font-style: italic;
     color: white;
+}
+
+h2 {
+    color: hsla(355, 85%, 63%, 1);
+    text-align: right;
+    margin-right: 3px;
 }
 
 h3 {
     text-align: center;
     margin: 1rem auto;
     padding: 1rem;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 10px;
 }
 
@@ -38,19 +49,17 @@ header {
 
 header h1 {
     text-align: center;
-    
+
 }
 
-body section {
+section {
     margin: 10px;
-    border-radius: 10px;
-    background-color: hsla(355, 85%, 63%, 1);
-    padding: 10px;
 }
 
-section p {
-    position: relative;
-    text-align: center;
+section div {
+    border-radius: 10px;
+    background-color: hsla(355, 85%, 63%, .9);
+    padding: 10px;
 }
 
 footer {
@@ -58,7 +67,26 @@ footer {
     text-align: center;
 }
 
-/* ID's */
+/* IDs */
 #listInit {
     margin-left: 10px;
+}
+
+#personal p {
+    position: relative;
+    text-align: center;
+}
+
+/* Classes */
+.projectButton {
+    background-color: rgb(221, 83, 95);
+    max-width: 20rem;
+
+}
+
+@media only screen and (min-width: 900px) {
+    section {
+        margin: 10px auto;
+        max-width: 900px;
+    }
 }
